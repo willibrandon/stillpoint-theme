@@ -17,6 +17,8 @@ exports.run = async () => {
     'editor.inlayHints.enabled': 'on', 'editor.semanticHighlighting.enabled': true,
     'typescript.inlayHints.parameterNames.enabled': 'all', 'typescript.inlayHints.variableTypes.enabled': true,
     'git.mergeEditor': true, 'git.openRepositoryInParentFolders': 'never',
+    'merge-conflict.decorators.enabled': true, 'merge-conflict.codeLens.enabled': true,
+    'editor.overviewRulerBorder': true,
     'terminal.integrated.fontSize': 14, 'terminal.integrated.gpuAcceleration': 'off',
     'debug.openDebug': 'openOnDebugBreak',
     'window.commandCenter': true
@@ -44,9 +46,37 @@ exports.run = async () => {
     await vscode.commands.executeCommand('workbench.view.explorer');
     if (scene === 'diff') await vscode.commands.executeCommand('vscode.diff', uri('base.ts'), uri('current.ts'), 'Review: range fills and word borders');
     else if (scene === 'merge') await vscode.commands.executeCommand('git.openMergeEditor', uri('review.ts'));
-    else if (scene === 'selection' || scene === 'inlay') {
+    else if (scene === 'inline-merge') {
+      await vscode.extensions.getExtension('vscode.merge-conflict').activate();
+      await vscode.commands.executeCommand('vscode.openWith', uri('review-inline.ts'), 'default');
+    } else if (/^unused-(roles|parameter|property|method|function|type)(-selected|-inactive)?$/.test(scene)) {
+      const [, role, state] = scene.match(/^unused-(roles|parameter|property|method|function|type)(-selected|-inactive)?$/);
+      const editor = await open('review-unused.ts');
+      const names = role === 'roles' ? ['unusedParameter', 'unusedProperty', 'unusedMethod', 'unusedFunction', 'UnusedType', 'unusedVariable'] : [role === 'type' ? 'UnusedType' : `unused${role[0].toUpperCase()}${role.slice(1)}`];
+      const ranges = names.map(name => {
+        const offset = editor.document.getText().indexOf(name);
+        if (offset < 0) throw new Error(`Missing unused specimen: ${name}`);
+        return new vscode.Selection(editor.document.positionAt(offset), editor.document.positionAt(offset + name.length));
+      });
+      if (role === 'roles') ranges.unshift(new vscode.Selection(0, 0, 0, editor.document.lineAt(0).text.length));
+      editor.selections = state ? ranges : [new vscode.Selection(ranges[0].start, ranges[0].start)];
+      for (let i = 0; i < 100; i++) {
+        if (ranges.every(range => vscode.languages.getDiagnostics(editor.document.uri).some(d => d.tags?.includes(vscode.DiagnosticTag.Unnecessary) && d.range.contains(range.start)))) break;
+        await delay(100);
+      }
+      if (state === '-inactive') await vscode.commands.executeCommand('workbench.files.action.focusFilesExplorer');
+    } else if (scene === 'unused' || scene === 'unused-selected') {
       const editor = await open('review-states.ts');
-      editor.selection = scene === 'selection' ? new vscode.Selection(11, 0, 11, 25) : new vscode.Selection(10, 0, 10, 0);
+      editor.selection = scene === 'unused-selected' ? new vscode.Selection(6, 8, 6, 14) : new vscode.Selection(6, 0, 6, 0);
+      for (let i = 0; i < 100; i++) {
+        if (vscode.languages.getDiagnostics(editor.document.uri).some(d => d.tags?.includes(vscode.DiagnosticTag.Unnecessary))) break;
+        await delay(100);
+      }
+    }
+    else if (scene === 'selection' || scene === 'inactive-selection' || scene === 'hover' || scene === 'inlay') {
+      const editor = await open('review-states.ts');
+      editor.selection = scene === 'inlay' ? new vscode.Selection(10, 0, 10, 0) : new vscode.Selection(11, 0, 11, 25);
+      if (scene === 'inactive-selection') await vscode.commands.executeCommand('workbench.files.action.focusFilesExplorer');
     } else if (scene === 'quickpick') {
       await open('review-states.ts');
       quickPick = vscode.window.createQuickPick();

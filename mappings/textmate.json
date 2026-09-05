@@ -6,7 +6,7 @@
       "punctuation.definition.comment"
     ],
     "settings": {
-      "foreground": "$muted",
+      "foreground": "$comment",
       "fontStyle": ""
     }
   },
@@ -472,7 +472,7 @@
       "comment entity.other.attribute-name"
     ],
     "settings": {
-      "foreground": "$muted",
+      "foreground": "$comment",
       "fontStyle": ""
     }
   }

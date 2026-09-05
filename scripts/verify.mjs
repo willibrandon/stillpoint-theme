@@ -59,7 +59,7 @@ for (const entry of grammarManifest.files) {
 const raw = scope => grammarCache.get(scope) ?? null;
 const cases=[
   {scope:'source.ts',line:'const count = 42;',needle:'42',role:'number'},
-  {scope:'source.ts',line:'// A comment remains readable',needle:'comment',role:'muted'},
+  {scope:'source.ts',line:'// A comment remains readable',needle:'comment',role:'comment'},
   {scope:'source.ts',line:'const label = "ready";',needle:'ready',role:'string'},
   {scope:'source.ts',line:'async function inspect() {}',needle:'inspect',role:'function'},
   {scope:'source.cs',line:'public class SnapshotReader {}',needle:'SnapshotReader',role:'type'},
@@ -68,7 +68,7 @@ const cases=[
   {scope:'source.json',line:'{"status": "ready", "count": 42}',needle:'status',role:'property'},
   {scope:'source.json',line:'{"status": "ready", "count": 42}',needle:'ready',role:'string'},
   {scope:'source.sql',line:'SELECT count(*) FROM assemblies;',needle:'SELECT',role:'keyword'},
-  {scope:'source.shell',line:'# Preserve shell comments',needle:'comments',role:'muted'},
+  {scope:'source.shell',line:'# Preserve shell comments',needle:'comments',role:'comment'},
   ...[['new','const result = new Item();'],['typeof','const result = typeof value;'],['instanceof','const result = value instanceof Item;'],['delete','delete item.key;'],['void','void inspect();'],['in','for (const key in item) {}'],['of','for (const item of items) {}']].map(([word,line]) => ({scope:'source.ts',line,needle:word,role:'keyword'})),
   ...[['new','var result = new Item();'],['await','var result = await Inspect();'],['is','var result = value is Item;'],['default','var result = default(Item);']].map(([word,line]) => ({scope:'source.cs',line,needle:word,role:'keyword'})),
   ...[['and','left and right'],['or','left or right'],['not','not left'],['is','left is right']].map(([word,expression]) => ({scope:'source.python',line:`result = ${expression}`,needle:word,role:'keyword'})),
@@ -112,7 +112,7 @@ let tokenChecks=0;
 const tokenFailures=[];
 for(const [variant,p] of Object.entries(palettes)){
   const theme=JSON.parse(await read(`themes/stillpoint-${variant}.json`));
-  for(const [selector,role] of [['variable.readonly','fg'],['enumMember','number'],['decorator','keyword'],['namespace','property']]) {
+  for(const [selector,role] of [['variable.readonly','fg'],['enumMember','number'],['decorator','keyword'],['namespace','property'],['parameter','parameter'],['property','property'],['comment','comment']]) {
     const actual=theme.semanticTokenColors[selector]?.foreground;
     if(actual!==p[role])tokenFailures.push({variant,selector,expected:p[role],actual});
   }

@@ -381,18 +381,12 @@
         "chat.slashCommandBackground",
         "debugView.exceptionLabelBackground",
         "debugView.stateLabelBackground",
-        "editor.selectionBackground",
         "editorSuggestWidget.selectedBackground",
         "inputOption.activeBackground",
-        "list.activeSelectionBackground",
-        "list.focusBackground",
-        "list.inactiveSelectionBackground",
         "menu.selectionBackground",
         "peekViewResult.selectionBackground",
         "profileBadge.background",
-        "selection.background",
-        "terminal.inactiveSelectionBackground",
-        "terminal.selectionBackground"
+        "selection.background"
       ]
     },
     {
@@ -413,7 +407,6 @@
         "inlineEdit.gutterIndicator.secondaryBackground",
         "inlineEdit.gutterIndicator.successfulBackground",
         "inputOption.hoverBackground",
-        "list.hoverBackground",
         "multiDiffEditor.headerBackground",
         "notificationCenterHeader.background",
         "panel.background",
@@ -645,10 +638,25 @@
       ]
     },
     {
-      "value": "$selection/FE",
+      "value": "$inactiveSelection",
       "keys": [
-        "editor.inactiveSelectionBackground"
+        "editor.inactiveSelectionBackground",
+        "terminal.inactiveSelectionBackground"
       ]
+    },
+    {
+      "value": "$activeSelection",
+      "keys": [
+        "editor.selectionBackground",
+        "list.activeSelectionBackground",
+        "list.focusBackground",
+        "list.inactiveSelectionBackground",
+        "terminal.selectionBackground"
+      ]
+    },
+    {
+      "value": "$listHover",
+      "keys": ["list.hoverBackground"]
     },
     {
       "value": "$stackFrame",
@@ -679,11 +687,13 @@
       "keys": [
         "editorBracketHighlight.foreground2",
         "editorBracketHighlight.foreground5",
-        "editorGhostText.foreground",
         "editorGutter.foldingControlForeground",
-        "editorLineNumber.foreground",
-        "terminal.ansiBrightBlack"
+        "editorLineNumber.foreground"
       ]
+    },
+    {
+      "value": "$dim",
+      "keys": ["editorGhostText.foreground", "terminal.ansiBrightBlack"]
     },
     {
       "value": "$accent/CC",
@@ -700,7 +710,7 @@
       ]
     },
     {
-      "value": "$readonlyOpacity",
+      "value": "$unusedOpacity",
       "keys": [
         "editorUnnecessaryCode.opacity"
       ]
@@ -720,12 +730,28 @@
       ]
     },
     {
-      "value": "$mergeHeader",
-      "keys": [
-        "merge.commonHeaderBackground",
-        "merge.currentHeaderBackground",
-        "merge.incomingHeaderBackground"
-      ]
+      "value": "$mergeCommonHeader",
+      "keys": ["merge.commonHeaderBackground"]
+    },
+    {
+      "value": "$mergeCurrentHeader",
+      "keys": ["merge.currentHeaderBackground"]
+    },
+    {
+      "value": "$mergeIncomingHeader",
+      "keys": ["merge.incomingHeaderBackground"]
+    },
+    {
+      "value": "$accent",
+      "keys": ["editorOverviewRuler.currentContentForeground"]
+    },
+    {
+      "value": "$info",
+      "keys": ["editorOverviewRuler.incomingContentForeground"]
+    },
+    {
+      "value": "$keyword",
+      "keys": ["editorOverviewRuler.commonContentForeground"]
     },
     {
       "value": "$mergeCurrent",

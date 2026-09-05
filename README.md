@@ -41,8 +41,8 @@ npm run package
 
 Edit `palette.json` and `mappings/{workbench,textmate,semantic}.json`, then rebuild. `scripts/state-palette.mjs` solves state washes separately from readable text colors. Do not hand-edit generated themes.
 
-`npm run check` verifies generated output, schema registrations, transparency, default-color coverage, 4,148 color/state comparisons, and 201 real-grammar cases. It reads committed, checksum-verified grammars; no sibling checkout or network is needed after `npm ci`. Review intentionally inherited colors in `validation/accepted-defaults.json` and the generated `output/reports/default-coverage.json`.
+`npm run check` verifies generated output, schema registrations, transparency, default-color coverage, 2,849 renderer-specific color/state comparisons, 247 alpha entries, 48 rejected regression mutations, and 201 real-grammar cases. It reads committed, checksum-verified grammars; no sibling checkout or network is needed after `npm ci`. Review intentionally inherited colors in `validation/accepted-defaults.json` and the generated `output/reports/default-coverage.json`.
 
-See [validation instructions](validation/README.md) for isolated real-editor captures and refreshing pinned references. Screenshots cover diff, merge, diagnostic selection, debugger Variables, inlay hints, Quick Pick, SCM graph, and terminal output in all three variants. Capture artifacts stay local under `output/playwright/`.
+See [validation instructions](validation/README.md) for isolated real-editor captures and refreshing pinned references. Screenshots cover diff, three-way and inline conflicts, active/inactive selection, unused identifiers, Explorer hover, debugger Variables, inlay hints, Quick Pick, SCM graph, and terminal output in all three variants. Capture artifacts stay local under `output/playwright/`.
 
 This preview includes measured palette validation. Complete editor accessibility, cross-platform compatibility, and comfort claims still require broader testing and extended use.

@@ -7,6 +7,23 @@ text on actual alpha composites, verifies diff/selection cues and line numbers,
 checks default-color coverage, and tokenizes the pinned real grammars. It needs
 neither another checkout nor network access once dependencies are installed.
 
+State gates use consumer-specific foregrounds: syntax on code fills, line numbers
+on gutters, ghost text on the editor, and bright-black on the terminal. Contrast
+selection is checked against its forced white foreground. Header and content
+lines are siblings. Every emitted alpha is inventoried separately; decorative
+marks do not become text surfaces. Mutation tests must reject the previous
+invisible/faint states without restoring blanket role/surface requirements.
+
+Unused syntax is checked on code-bearing surfaces, including current lines,
+diff/merge fills, word changes, and active/inactive selections over those states.
+Native TypeScript fades parameters, properties, methods, functions, type aliases,
+and whole unused imports (including their comments, strings, and punctuation).
+All emitted syntax colors therefore retain the text minimum after the 20% fade;
+named semantic-role checks and old-color mutations guard the reported regressions.
+Gutter numbers, ghost text, UI labels, and merge headers remain separate consumers.
+There is no selected-unused exception. Application-owned terminal backgrounds
+and arbitrary provider decorations are not a claim of comprehensive conformance.
+
 `grammars/manifest.json` records immutable commits and SHA-256 hashes for every
 vendored grammar and license. Copies are unmodified; upstream contributor metadata
 and VS Code's third-party notices are retained. These files are development-only
@@ -44,9 +61,18 @@ Never run either editor suite against your normal profile. Both change settings.
 5. Run `node scripts/capture-scene.mjs night validate` for native schema checks,
    then `node scripts/capture-scene.mjs night finish` to close the test host.
 
-The 24 captures cover diff, merge conflict, selection over a diagnostic, paused
-debugger Variables, native TypeScript inlay hints, Quick Pick, a real Git graph,
-and terminal `ls`/`git diff`. The harness uses a disposable Git repository and a
+The 48 captures cover diff, three-way merge, diff3 inline conflict, selection over
+a diagnostic, inactive selection, unused code both selected and unselected,
+Explorer hover, paused debugger Variables, native TypeScript inlay hints, Quick
+Pick, a real Git graph, and terminal `ls`/`git diff`, in all three variants.
+The unused-role specimen adds normal, multi-selected, and unfocused multi-selected
+states for six identifier roles plus an entire unused import. Assertions check
+the native semantic foreground, unnecessary-opacity spans, real selection overlap,
+and contrast computed from rendered CSS colors, not just the generator's values.
+Inline-conflict assertions check native decorations and actual overview-ruler
+canvas pixels for current, incoming, and base content. The inline fixture copies
+the real Git conflict before the three-way editor initializes its shared result
+working copy without markers. The harness uses a disposable Git repository and a
 token-protected loopback controller; it does not install the extension. Run one
 capture/validation command at a time. The macOS setup fixes Retina DPR at 2 and
 uses the terminal's DOM renderer to avoid capture scaling artifacts.

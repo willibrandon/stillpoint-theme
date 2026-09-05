@@ -20,9 +20,12 @@ git('commit', '-qam', 'Inspect module snapshots');
 git('switch', '-q', 'main');
 await writeFile(`${workspace}/review.ts`, current);
 git('commit', '-qam', 'Inspect assembly snapshots');
-try { git('merge', '--no-edit', 'feature'); } catch {
+try { git('-c', 'merge.conflictStyle=diff3', 'merge', '--no-edit', 'feature'); } catch {
   if (!git('ls-files', '-u').trim()) throw new Error('Expected a fixture merge conflict');
 }
+// The three-way editor initializes its result working copy without markers.
+// Keep a separate snapshot of the real Git conflict for the inline renderer.
+await cp(`${workspace}/review.ts`, `${workspace}/review-inline.ts`);
 await writeFile(`${workspace}/inspect.ts`, '// Review fixture: changed scan limit\n' + current);
 await writeFile(new URL('output/editor-workspace.json', root), JSON.stringify({ workspace }, null, 2) + '\n');
 console.log(workspace);

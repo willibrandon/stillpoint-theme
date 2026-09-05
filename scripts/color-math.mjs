@@ -1,4 +1,4 @@
-export const textRoles = ['fg', 'muted', 'keyword', 'type', 'function', 'string', 'number', 'property', 'parameter', 'operator', 'error', 'warning', 'info', 'success'];
+export const textRoles = ['fg', 'muted', 'comment', 'keyword', 'type', 'function', 'string', 'number', 'property', 'parameter', 'operator', 'error', 'warning', 'info', 'success'];
 
 export function rgba(hex) {
   if (!/^#[\da-f]{6}([\da-f]{2})?$/i.test(hex)) throw new Error(`Invalid color: ${hex}`);

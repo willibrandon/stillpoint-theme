@@ -49,6 +49,7 @@ for (const [variant, palette] of Object.entries(palettes)) {
   previewStates[variant] = Object.fromEntries([
     ['diffInserted', 'diffEditor.insertedLineBackground'],
     ['diffRemoved', 'diffEditor.removedLineBackground'],
+    ['activeSelection', 'editor.selectionBackground'],
     ['focusedStackFrame', 'editor.focusedStackFrameHighlightBackground']
   ].map(([role, key]) => [role, result.colors[key]]));
   const file = new URL(`themes/stillpoint-${variant}.json`, root);

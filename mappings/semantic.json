@@ -120,7 +120,7 @@
     "italic": false
   },
   "comment": {
-    "foreground": "$muted",
+    "foreground": "$comment",
     "bold": false,
     "italic": false
   },
