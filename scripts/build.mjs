@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { isDeepStrictEqual } from 'node:util';
+import { statePalette } from './state-palette.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = async file => JSON.parse(await readFile(new URL(file, root), 'utf8'));
@@ -10,11 +11,12 @@ const semantic = await read('mappings/semantic.json');
 const checking = process.argv.includes('--check');
 
 function theme(palette, variant) {
+  const roles = { ...palette, ...statePalette(palette, variant) };
   const resolve = value => {
     if (!value.startsWith('$')) return value;
     const [role, alpha] = value.slice(1).split('/');
-    if (!palette[role]) throw new Error(`Unknown role: ${value}`);
-    return palette[role] + (alpha ?? '');
+    if (!roles[role]) throw new Error(`Unknown role: ${value}`);
+    return roles[role] + (alpha ?? '');
   };
   const colors = {};
   const assign = (key, value) => {
@@ -41,8 +43,14 @@ function theme(palette, variant) {
 
 await mkdir(new URL('themes/', root), { recursive: true });
 await mkdir(new URL('dist/', root), { recursive: true });
+const previewStates = {};
 for (const [variant, palette] of Object.entries(palettes)) {
   const result = theme(palette, variant);
+  previewStates[variant] = Object.fromEntries([
+    ['diffInserted', 'diffEditor.insertedLineBackground'],
+    ['diffRemoved', 'diffEditor.removedLineBackground'],
+    ['focusedStackFrame', 'editor.focusedStackFrameHighlightBackground']
+  ].map(([role, key]) => [role, result.colors[key]]));
   const file = new URL(`themes/stillpoint-${variant}.json`, root);
   if (checking) {
     const existing = JSON.parse(await readFile(file, 'utf8'));
@@ -52,3 +60,9 @@ for (const [variant, palette] of Object.entries(palettes)) {
   }
   console.log(`${checking ? 'Verified' : 'Built'} ${palette.name}: ${Object.keys(result.colors).length} workbench colors, ${result.tokenColors.length} grammar rules, ${Object.keys(result.semanticTokenColors).length} semantic rules.`);
 }
+const previewFile = new URL('preview.html', root);
+const preview = await readFile(previewFile, 'utf8');
+const previewTag = `<script id="states" type="application/json">${JSON.stringify(previewStates)}</script>`;
+const updated = preview.replace(/<script id="states" type="application\/json">.*?<\/script>/, previewTag);
+if (checking && preview !== updated) throw new Error('Preview state colors are stale');
+if (!checking) await writeFile(previewFile, updated);

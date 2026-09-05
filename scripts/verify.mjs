@@ -24,6 +24,7 @@ for(const contribution of manifest.contributes.themes){
   const theme=JSON.parse(await read(contribution.path));
   assert.equal(theme.semanticHighlighting,true);
   for(const [key,value] of Object.entries(theme.colors)){
+    assert.ok(!key.startsWith('agentsMobileDiff.'), 'Mobile-only colors are not registered by the desktop editor');
     assert.match(value,/^#[0-9A-Fa-f]{6}(?:[0-9A-Fa-f]{2})?$/,key);
     if(!registrations[key])unknown.push(key);
     if(registrations[key]?.needsTransparency && (value.length!==9||value.slice(-2).toUpperCase()==='FF'))opaque.push(key);
@@ -95,6 +96,14 @@ const cases=[
   {scope:'source.yaml',line:'status: ready',needle:'status',role:'property'},
   {scope:'source.ini',line:'status=ready',needle:'status',role:'property'},
   {scope:'source.python',line:'result = inspect(value)',needle:'inspect',role:'function'},
+  {scope:'source.python',line:'result = inspect(value)',needle:'value',role:'fg'},
+  {scope:'source.python',line:'@memoize',needle:'@',role:'keyword'},
+  {scope:'source.python',line:'title = f"value: {item}"',needle:'{',role:'keyword'},
+  {scope:'source.ts',line:'const title = `value: ${inspect(value)}`;',needle:'(',role:'operator'},
+  {scope:'source.java',line:'List<String> names = new ArrayList<>();',needle:'ArrayList',role:'type'},
+  {scope:'source.rust',line:'let ready = true;',needle:'true',role:'number'},
+  {scope:'source.css',line:'a { color: #aabbcc; }',needle:'#aabbcc',role:'number'},
+  {scope:'source.css',line:'a { display: block; }',needle:'block',role:'string'},
   {scope:'source.css',line:'a { width: 12px; }',needle:'px',role:'number'}
 ];
 let tokenChecks=0;
@@ -125,7 +134,7 @@ try {
   await access(new URL('preview.html',root));
   const html=await read('preview.html');
   for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)){
-    if(!match[0].startsWith('<script id="palettes"'))new Script(match[1],{filename:'preview.html'});
+    if(!match[0].includes('type="application/json"'))new Script(match[1],{filename:'preview.html'});
   }
   const embedded=JSON.parse(html.match(/<script id="palettes" type="application\/json">([\s\S]*?)<\/script>/)[1]);
   assert.deepEqual(embedded,palettes,'Preview palettes must match the theme');

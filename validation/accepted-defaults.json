@@ -1,5 +1,30 @@
 {
   "version": "1.136.1",
-  "policy": "Every unmapped registration with a literal hex default requires an explicit key and reason. Empty until the mapping pass reviews each exception.",
-  "accepted": {}
+  "policy": "Explicit exceptions apply only when that variant leaves the key unset. High-contrast state borders are always mapped. No wildcard exceptions.",
+  "accepted": {
+    "agentsMobileDiff.addedForeground": "Mobile-only registration is absent from the desktop 1.136.1 schema; retain that separate client's native color.",
+    "agentsMobileDiff.deletedForeground": "Mobile-only registration is absent from the desktop 1.136.1 schema; retain that separate client's native color.",
+    "agentsMobileDiff.modifiedForeground": "Mobile-only registration is absent from the desktop 1.136.1 schema; retain that separate client's native color.",
+    "agentsNewSessionButton.background": "Retain the native transparent background; this button inherits its containing surface.",
+    "diffEditor.unchangedRegionShadow": "Retain the neutral decorative shadow separating collapsed unchanged regions.",
+    "editorActiveLineNumber.foreground": "Legacy deprecated registration; editorLineNumber.activeForeground is explicitly mapped instead.",
+    "contrastBorder": "Night and Day omit universal high-contrast outlines; Contrast explicitly maps this key.",
+    "editor.compositionBorder": "Keep the native IME composition treatment in Night/Day; Contrast maps the visible border.",
+    "editor.lineHighlightBorder": "Night/Day use the subtle filled current line; Contrast explicitly maps a state border.",
+    "editor.selectionForeground": "Night/Day retain syntax foregrounds in selections; Contrast explicitly sets this key.",
+    "editor.snippetFinalTabstopHighlightBorder": "Retain the normal-theme null border for snippet final stops; Contrast maps the border.",
+    "editorError.border": "Night/Day retain the normal null extra border and use the error squiggle; Contrast maps its border.",
+    "editorWarning.border": "Night/Day retain the normal null extra border and use the warning squiggle; Contrast maps its border.",
+    "editorInfo.border": "Night/Day retain the normal null extra border and use the information squiggle; Contrast maps its border.",
+    "editorHint.border": "Night/Day retain the normal null extra border; Contrast uses a palette hint border.",
+    "editorGhostText.border": "Night/Day intentionally have no inline-suggestion box; Contrast explicitly maps its border.",
+    "editorOverviewRuler.border": "Retain the normal-theme null ruler border; Contrast explicitly maps the border.",
+    "editorUnnecessaryCode.border": "Night/Day fade unused code without an underline; Contrast explicitly uses the dashed border.",
+    "listFilterWidget.outline": "Night/Day retain the normal transparent outline; Contrast explicitly maps the outline.",
+    "panelInput.border": "Normal themes inherit the input border; Contrast explicitly maps this border.",
+    "simpleFindWidget.sashBorder": "Normal themes retain a transparent divider; Contrast explicitly maps the divider.",
+    "terminal.selectionForeground": "Night/Day preserve ANSI foregrounds during selection; Contrast explicitly supplies readable text.",
+    "terminalStickyScroll.border": "Normal themes retain the native null border; Contrast explicitly maps the border.",
+    "welcomePage.tileBorder": "Normal themes retain the default null tile border; Contrast explicitly maps it."
+  }
 }

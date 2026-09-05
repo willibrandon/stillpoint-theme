@@ -25,6 +25,7 @@ for(const file of files){
   }
   visit(tree);
   for(const match of source.matchAll(/['"]((?:terminal\.ansi|editor(?:IndentGuide|BracketPairGuide|BracketHighlight)\.)[^'"$]+)['"]/g)){
+    if(match[1].includes('\\') || match[1]==='terminal.ansiColor')continue;
     colors[match[1]]??={needsTransparency:false,deprecated:false,source:file.slice(tag.length+1),...defaultsMetadata(source),defaults:'Dynamic registration: conservatively collect hex defaults from its source file.'};
   }
 }

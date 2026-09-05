@@ -20,12 +20,25 @@ for (const [variant, palette] of Object.entries(palettes)) {
     return composite(colors[key], background);
   }, editor);
   const states = { ...surfaces };
+  const backgroundFor = key => {
+    const owner = [
+      [/^terminal\./, 'terminal.background'],
+      [/^statusBarItem\./, 'statusBar.background'],
+      [/^list\./, 'sideBar.background'],
+      [/^chat\.|^agentsVoice\./, 'panel.background'],
+      [/^peekViewEditor\./, 'peekViewEditor.background'],
+      [/^peekViewResult\./, 'peekViewResult.background'],
+      [/^tab\./, 'tab.inactiveBackground'],
+      [/^notebook\./, 'notebook.editorBackground']
+    ].find(([pattern]) => pattern.test(key))?.[1] ?? 'editor.background';
+    return { owner, color: colors[owner] ?? editor };
+  };
   // Audit every shipped alpha value, not a second copy of the generator's alpha.
   for (const [key, value] of Object.entries(colors)) {
     if (value.length !== 9) continue;
-    const background = key.startsWith('terminal.') ? colors['terminal.background'] : editor;
+    const { owner, color: background } = backgroundFor(key);
     const resolved = composite(value, background);
-    add(variant, `alpha composition: ${key}`, ratio(resolved, background), 1, { value, background, resolved });
+    add(variant, `alpha composition: ${key}`, ratio(resolved, background), 1, { value, owner, background, resolved });
     // Slider thumbs, minimap marks and overview-ruler marks have no text on top.
     const textSurface = /^(editor\.|terminal\.|diffEditor\.|merge\.|mergeEditor\.|inlineEdit\.|inlineChatDiff\.|chat\.)/.test(key)
       && /Background$|\.background$/.test(key) && !/gutterIndicator/.test(key);
@@ -43,6 +56,11 @@ for (const [variant, palette] of Object.entries(palettes)) {
     }
     const gutter = colors[`editorGutter.${kind === 'inserted' ? 'added' : 'deleted'}Background`];
     add(variant, `${kind} gutter contrast`, ratio(gutter, editor), 3);
+    const gutterSurface = resolve([`diffEditorGutter.${kind}LineBackground`]);
+    add(variant, `${kind} line number on diff gutter`, ratio(colors['editorLineNumber.foreground'], gutterSurface), minimum);
+    add(variant, `${kind} active line number on diff gutter`, ratio(colors['editorLineNumber.activeForeground'], gutterSurface), minimum);
+    add(variant, `${kind} dimmed line number on diff gutter`, ratio(colors['editorLineNumber.dimmedForeground'], gutterSurface), minimum);
+    add(variant, `${kind} gutter marker on diff gutter`, ratio(gutter, gutterSurface), 3);
   }
   const inserted = resolve(['diffEditor.insertedLineBackground']);
   const removed = resolve(['diffEditor.removedLineBackground']);
@@ -73,6 +91,10 @@ for (const [variant, palette] of Object.entries(palettes)) {
   for (const [key, foreground] of [['button.background', colors['button.foreground']], ['statusBar.debuggingBackground', colors['statusBar.debuggingForeground']]]) {
     add(variant, `${key} text`, ratio(foreground, composite(colors[key], editor)), minimum);
   }
+  for (const key of ['scmGraph.historyItemRefColor', 'scmGraph.historyItemRemoteRefColor', 'scmGraph.historyItemBaseRefColor']) {
+    add(variant, `${key} label text`, ratio(colors['scmGraph.historyItemHoverLabelForeground'], colors[key]), minimum);
+  }
+  add(variant, 'SCM default label text', ratio(colors['scmGraph.historyItemHoverDefaultLabelForeground'], colors['scmGraph.historyItemHoverDefaultLabelBackground']), minimum);
 }
 
 const failures = results.filter(check => !check.pass);

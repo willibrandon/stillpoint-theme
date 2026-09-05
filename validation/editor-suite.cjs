@@ -19,6 +19,8 @@ exports.run = async () => {
   const probe = await vscode.workspace.openTextDocument({ language: 'json', content: '{"$schema":"vscode://schemas/color-theme","colors":{"stillpoint.invalid":"#112233"}}' });
   await vscode.window.showTextDocument(probe);
   await until(() => vscode.languages.getDiagnostics(probe.uri).some(d => d.message.includes('stillpoint.invalid')), 'JSON theme schema validation becomes active');
+  // This untitled document is created only by the schema probe above.
+  await vscode.commands.executeCommand('workbench.action.revertAndCloseActiveEditor');
   for (const [variant, kind] of [['night', vscode.ColorThemeKind.Dark], ['day', vscode.ColorThemeKind.Light], ['contrast', vscode.ColorThemeKind.HighContrast]]) {
     const theme = JSON.parse(await fs.readFile(path.join(root, 'themes', `stillpoint-${variant}.json`), 'utf8'));
     await vscode.workspace.getConfiguration('workbench').update('colorTheme', theme.name, vscode.ConfigurationTarget.Global);

@@ -100,12 +100,12 @@
     "italic": false
   },
   "variable.readonly": {
-    "foreground": "$number",
+    "foreground": "$fg",
     "bold": false,
     "italic": false
   },
   "property.readonly": {
-    "foreground": "$number",
+    "foreground": "$property",
     "bold": false,
     "italic": false
   },
@@ -136,6 +136,14 @@
     "underline": true
   },
   "parameter.reassigned:csharp": {
+    "underline": true
+  },
+  "boolean": {
+    "foreground": "$number",
+    "bold": false,
+    "italic": false
+  },
+  "variable.mutable:rust": {
     "underline": true
   }
 }

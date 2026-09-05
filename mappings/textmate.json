@@ -24,8 +24,7 @@
     "name": "Numbers and constants",
     "scope": [
       "constant.numeric",
-      "constant.language",
-      "variable.other.constant"
+      "constant.language"
     ],
     "settings": {
       "foreground": "$number",
@@ -73,7 +72,9 @@
     "name": "Variables",
     "scope": [
       "variable.other.readwrite",
-      "variable.other.object"
+      "variable.other.object",
+      "variable.other.constant",
+      "variable.language"
     ],
     "settings": {
       "foreground": "$fg",
@@ -133,7 +134,8 @@
     "scope": [
       "constant.character.escape",
       "punctuation.section.interpolation",
-      "punctuation.definition.template-expression"
+      "punctuation.definition.template-expression",
+      "constant.character.format.placeholder.other.python"
     ],
     "settings": {
       "foreground": "$keyword",
@@ -301,6 +303,177 @@
     "settings": {
       "foreground": "$error",
       "fontStyle": "underline"
+    }
+  },
+  {
+    "name": "Embedded expressions",
+    "scope": [
+      "meta.embedded",
+      "meta.template.expression"
+    ],
+    "settings": {
+      "foreground": "$fg",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "String delimiters",
+    "scope": [
+      "punctuation.definition.string"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Inherited types",
+    "scope": [
+      "entity.other.inherited-class"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Word operators",
+    "scope": [
+      "keyword.operator.new",
+      "keyword.operator.expression",
+      "keyword.operator.logical.python",
+      "keyword.operator.word"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Decorators",
+    "scope": [
+      "entity.name.function.decorator",
+      "meta.decorator entity.name.function",
+      "punctuation.definition.decorator"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "C# namespace names",
+    "scope": [
+      "entity.name.type.namespace.cs"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Go built-in types",
+    "scope": [
+      "storage.type.numeric.go",
+      "storage.type.string.go",
+      "storage.type.boolean.go",
+      "storage.type.error.go",
+      "storage.type.uintptr.go",
+      "storage.type.byte.go",
+      "storage.type.rune.go"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Java types",
+    "scope": [
+      "storage.type.java",
+      "storage.type.primitive.java",
+      "storage.type.generic.java",
+      "storage.type.object.array.java",
+      "storage.type.primitive.array.java"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration keys",
+    "scope": [
+      "entity.name.tag.yaml",
+      "keyword.other.definition.ini",
+      "support.type.property-name.toml",
+      "entity.other.attribute-name.toml",
+      "keyword.other.key.toml",
+      "keyword.other.systemd",
+      "support.type.property-name.systemd",
+      "keyword.other.directive.caddyfile",
+      "keyword.other.directive.logrotate",
+      "keyword.control.directive.caddyfile",
+      "keyword.control.directive.logrotate"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Python calls",
+    "scope": [
+      "meta.function-call.generic.python"
+    ],
+    "settings": {
+      "foreground": "$function",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Units and CSS colors",
+    "scope": [
+      "keyword.other.unit",
+      "constant.other.color",
+      "constant.other.color punctuation.definition.constant"
+    ],
+    "settings": {
+      "foreground": "$number",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "CSS value constants",
+    "scope": [
+      "support.constant"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Punctuation and embedded braces",
+    "scope": [
+      "meta.brace",
+      "meta.brace.round",
+      "punctuation.section.arguments"
+    ],
+    "settings": {
+      "foreground": "$operator",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML doc tags",
+    "scope": [
+      "comment entity.name.tag",
+      "comment entity.other.attribute-name"
+    ],
+    "settings": {
+      "foreground": "$muted",
+      "fontStyle": ""
     }
   }
 ]
