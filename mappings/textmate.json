@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Explanatory text",
+    "scope": [
+      "comment",
+      "punctuation.definition.comment"
+    ],
+    "settings": {
+      "foreground": "$muted",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Strings",
+    "scope": [
+      "string"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Numbers and constants",
+    "scope": [
+      "constant.numeric",
+      "constant.language",
+      "variable.other.constant"
+    ],
+    "settings": {
+      "foreground": "$number",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Keywords and declaration",
+    "scope": [
+      "keyword",
+      "storage.type",
+      "storage.modifier"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Types",
+    "scope": [
+      "entity.name.type",
+      "support.type",
+      "support.class",
+      "entity.name.class",
+      "entity.name.tag"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Calls",
+    "scope": [
+      "entity.name.function",
+      "support.function"
+    ],
+    "settings": {
+      "foreground": "$function",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Variables",
+    "scope": [
+      "variable.other.readwrite",
+      "variable.other.object"
+    ],
+    "settings": {
+      "foreground": "$fg",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Properties and keys",
+    "scope": [
+      "variable.other.property",
+      "variable.other.object.property",
+      "support.type.property-name",
+      "support.type.property-name.json",
+      "entity.other.attribute-name",
+      "meta.object-literal.key",
+      "meta.mapping.key string"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Parameters",
+    "scope": [
+      "variable.parameter"
+    ],
+    "settings": {
+      "foreground": "$parameter",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Namespaces and labels",
+    "scope": [
+      "entity.name.namespace",
+      "entity.name.label"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Operators and punctuation",
+    "scope": [
+      "keyword.operator",
+      "punctuation"
+    ],
+    "settings": {
+      "foreground": "$operator",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Escapes and interpolation delimiters",
+    "scope": [
+      "constant.character.escape",
+      "punctuation.section.interpolation",
+      "punctuation.definition.template-expression"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Regexp operators",
+    "scope": [
+      "keyword.operator.regexp",
+      "keyword.operator.quantifier.regexp",
+      "punctuation.definition.character-class.regexp"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration sections",
+    "scope": [
+      "entity.name.section",
+      "entity.name.namespace.site-address.caddyfile"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration variables",
+    "scope": [
+      "variable.other.systemd.specifier",
+      "variable.other.systemd.environment",
+      "variable.other.placeholder.caddyfile",
+      "variable.other.environment.caddyfile",
+      "variable.other.environment.vhs"
+    ],
+    "settings": {
+      "foreground": "$parameter",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration paths",
+    "scope": [
+      "string.unquoted.path.logrotate",
+      "string.quoted.path.logrotate"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration identities",
+    "scope": [
+      "entity.name.user.logrotate",
+      "entity.name.group.logrotate"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Configuration units",
+    "scope": [
+      "keyword.other.unit.logrotate",
+      "keyword.other.unit.vhs"
+    ],
+    "settings": {
+      "foreground": "$number",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Markdown headings",
+    "scope": [
+      "markup.heading",
+      "entity.name.section.markdown"
+    ],
+    "settings": {
+      "foreground": "$fg",
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "name": "Markdown links",
+    "scope": [
+      "markup.underline.link",
+      "markup.underline.link.image"
+    ],
+    "settings": {
+      "foreground": "$accent",
+      "fontStyle": "underline"
+    }
+  },
+  {
+    "name": "Markdown emphasis",
+    "scope": [
+      "markup.italic"
+    ],
+    "settings": {
+      "foreground": "$fg",
+      "fontStyle": "italic"
+    }
+  },
+  {
+    "name": "Markdown strong",
+    "scope": [
+      "markup.bold"
+    ],
+    "settings": {
+      "foreground": "$fg",
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "name": "Markdown code",
+    "scope": [
+      "markup.inline.raw",
+      "markup.fenced_code.block punctuation.definition"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Added lines",
+    "scope": [
+      "markup.inserted"
+    ],
+    "settings": {
+      "foreground": "$success",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Removed lines",
+    "scope": [
+      "markup.deleted"
+    ],
+    "settings": {
+      "foreground": "$error",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Changed lines",
+    "scope": [
+      "markup.changed"
+    ],
+    "settings": {
+      "foreground": "$warning",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Invalid syntax",
+    "scope": [
+      "invalid.illegal"
+    ],
+    "settings": {
+      "foreground": "$error",
+      "fontStyle": "underline"
+    }
+  }
+]

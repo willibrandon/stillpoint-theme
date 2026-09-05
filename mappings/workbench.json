@@ -1,0 +1,627 @@
+{
+  "description": "Each key is assigned once. $role references palette.json; /AA appends alpha. Variant entries add keys absent from common groups.",
+  "groups": [
+    {
+      "value": "$accent",
+      "keys": [
+        "activityBar.activeBorder",
+        "badge.background",
+        "button.background",
+        "chat.avatarForeground",
+        "chat.slashCommandForeground",
+        "editor.findMatchBackground",
+        "editor.findMatchBorder",
+        "editor.findMatchHighlightBorder",
+        "editor.wordHighlightBorder",
+        "editor.wordHighlightStrongBorder",
+        "editor.wordHighlightTextBorder",
+        "editorBracketMatch.border",
+        "editorCursor.foreground",
+        "editorHoverWidget.highlightForeground",
+        "editorLink.activeForeground",
+        "editorSuggestWidget.focusHighlightForeground",
+        "editorSuggestWidget.highlightForeground",
+        "focusBorder",
+        "inlineChatInput.focusBorder",
+        "inlineEdit.gutterIndicator.primaryBorder",
+        "inlineEdit.gutterIndicator.secondaryBorder",
+        "inlineEdit.modifiedBorder",
+        "inlineEdit.tabWillAcceptModifiedBorder",
+        "inputOption.activeBorder",
+        "inputOption.activeForeground",
+        "interactive.activeCodeBorder",
+        "list.focusAndSelectionOutline",
+        "list.focusHighlightForeground",
+        "list.focusOutline",
+        "list.highlightForeground",
+        "list.inactiveFocusOutline",
+        "panelTitle.activeBorder",
+        "peekView.border",
+        "peekViewTitleLabel.foreground",
+        "progressBar.background",
+        "sash.hoverBorder",
+        "statusBarItem.remoteBackground",
+        "tab.activeBorderTop",
+        "terminal.ansiBrightCyan",
+        "terminal.ansiCyan",
+        "terminal.findMatchBorder",
+        "terminal.findMatchHighlightBorder",
+        "terminalCommandDecoration.successBackground",
+        "terminalCursor.foreground",
+        "terminalOverviewRuler.cursorForeground",
+        "textLink.activeForeground",
+        "textLink.foreground"
+      ]
+    },
+    {
+      "value": "$recessed",
+      "keys": [
+        "activityBar.background",
+        "editorGroupHeader.tabsBackground",
+        "statusBar.background",
+        "statusBar.debuggingBackground",
+        "statusBar.noFolderBackground",
+        "terminal.ansiBlack",
+        "titleBar.activeBackground",
+        "titleBar.inactiveBackground"
+      ]
+    },
+    {
+      "value": "$border",
+      "keys": [
+        "activityBar.border",
+        "chat.checkpointSeparator",
+        "chat.requestBorder",
+        "diffEditor.border",
+        "diffEditor.diagonalFill",
+        "editorBracketPairGuide.background1",
+        "editorBracketPairGuide.background2",
+        "editorBracketPairGuide.background3",
+        "editorBracketPairGuide.background4",
+        "editorBracketPairGuide.background5",
+        "editorBracketPairGuide.background6",
+        "editorGroup.border",
+        "editorGroupHeader.tabsBorder",
+        "editorIndentGuide.background1",
+        "editorIndentGuide.background2",
+        "editorIndentGuide.background3",
+        "editorIndentGuide.background4",
+        "editorIndentGuide.background5",
+        "editorIndentGuide.background6",
+        "editorRuler.foreground",
+        "editorWhitespace.foreground",
+        "multiDiffEditor.border",
+        "panel.border",
+        "sideBar.border",
+        "sideBarSectionHeader.border",
+        "statusBar.border",
+        "statusBar.debuggingBorder",
+        "statusBar.noFolderBorder",
+        "tab.border",
+        "titleBar.border"
+      ]
+    },
+    {
+      "value": "$property",
+      "keys": [
+        "activityBar.foreground",
+        "editorBracketHighlight.foreground1",
+        "editorBracketHighlight.foreground4",
+        "icon.foreground",
+        "terminal.ansiWhite"
+      ]
+    },
+    {
+      "value": "$muted",
+      "keys": [
+        "activityBar.inactiveForeground",
+        "breadcrumb.focusForeground",
+        "breadcrumb.foreground",
+        "debugIcon.breakpointDisabledForeground",
+        "debugIcon.breakpointUnverifiedForeground",
+        "descriptionForeground",
+        "diffEditor.unchangedRegionForeground",
+        "disabledForeground",
+        "editorCodeLens.foreground",
+        "editorGhostText.foreground",
+        "editorUnnecessaryCode.border",
+        "gitDecoration.ignoredResourceForeground",
+        "gitDecoration.submoduleResourceForeground",
+        "inlineChatInput.placeholderForeground",
+        "input.placeholderForeground",
+        "panelTitle.inactiveForeground",
+        "peekViewTitleDescription.foreground",
+        "sideBarSectionHeader.foreground",
+        "sideBarTitle.foreground",
+        "tab.inactiveForeground",
+        "tab.unfocusedActiveForeground",
+        "tab.unfocusedInactiveForeground",
+        "terminal.ansiBrightBlack",
+        "testing.iconSkipped",
+        "titleBar.inactiveForeground"
+      ]
+    },
+    {
+      "value": "$bg",
+      "keys": [
+        "badge.foreground",
+        "button.foreground",
+        "diffEditor.unchangedCodeBackground",
+        "editor.background",
+        "editor.findMatchForeground",
+        "multiDiffEditor.background",
+        "notebook.cellEditorBackground",
+        "statusBarItem.remoteForeground",
+        "tab.activeBackground",
+        "terminal.background",
+        "terminalCursor.background"
+      ]
+    },
+    {
+      "value": "$fg",
+      "keys": [
+        "breadcrumb.activeSelectionForeground",
+        "button.secondaryForeground",
+        "dropdown.foreground",
+        "editor.foreground",
+        "editorHoverWidget.foreground",
+        "editorInlayHint.foreground",
+        "editorLineNumber.activeForeground",
+        "editorSuggestWidget.foreground",
+        "editorSuggestWidget.selectedForeground",
+        "editorSuggestWidget.selectedIconForeground",
+        "editorWidget.foreground",
+        "foreground",
+        "inlineChat.foreground",
+        "inlineEdit.gutterIndicator.primaryForeground",
+        "inlineEdit.gutterIndicator.secondaryForeground",
+        "inlineEdit.gutterIndicator.successfulForeground",
+        "input.foreground",
+        "inputValidation.errorForeground",
+        "inputValidation.infoForeground",
+        "inputValidation.warningForeground",
+        "list.activeSelectionForeground",
+        "list.focusForeground",
+        "list.hoverForeground",
+        "list.inactiveSelectionForeground",
+        "menu.foreground",
+        "menu.selectionForeground",
+        "notifications.foreground",
+        "panelTitle.activeForeground",
+        "peekViewResult.selectionForeground",
+        "quickInput.foreground",
+        "sideBar.foreground",
+        "statusBar.debuggingForeground",
+        "statusBar.foreground",
+        "statusBar.noFolderForeground",
+        "tab.activeForeground",
+        "terminal.ansiBrightWhite",
+        "terminal.foreground",
+        "terminal.selectionForeground",
+        "titleBar.activeForeground"
+      ]
+    },
+    {
+      "value": "$control",
+      "keys": [
+        "button.border",
+        "dropdown.border",
+        "editorGhostText.border",
+        "editorHoverWidget.border",
+        "editorIndentGuide.activeBackground1",
+        "editorIndentGuide.activeBackground2",
+        "editorIndentGuide.activeBackground3",
+        "editorIndentGuide.activeBackground4",
+        "editorIndentGuide.activeBackground5",
+        "editorIndentGuide.activeBackground6",
+        "editorSuggestWidget.border",
+        "editorWidget.border",
+        "inlineChat.border",
+        "inlineChatInput.border",
+        "inlineEdit.originalBorder",
+        "inlineEdit.tabWillAcceptOriginalBorder",
+        "input.border",
+        "interactive.inactiveCodeBorder",
+        "menu.border",
+        "merge.border",
+        "notificationCenter.border",
+        "notifications.border",
+        "terminal.border",
+        "terminalOverviewRuler.border",
+        "textBlockQuote.border",
+        "textSeparator.foreground",
+        "widget.border"
+      ]
+    },
+    {
+      "value": "$selection",
+      "keys": [
+        "button.secondaryBackground",
+        "button.secondaryHoverBackground",
+        "chat.avatarBackground",
+        "chat.slashCommandBackground",
+        "editor.selectionBackground",
+        "editorSuggestWidget.selectedBackground",
+        "inputOption.activeBackground",
+        "list.activeSelectionBackground",
+        "list.focusBackground",
+        "list.hoverBackground",
+        "list.inactiveSelectionBackground",
+        "menu.selectionBackground",
+        "peekViewResult.selectionBackground",
+        "selection.background",
+        "terminal.inactiveSelectionBackground",
+        "terminal.selectionBackground"
+      ]
+    },
+    {
+      "value": "$info",
+      "keys": [
+        "chat.editedFileForeground",
+        "diffEditor.move.border",
+        "diffEditor.moveActive.border",
+        "editorGutter.modifiedBackground",
+        "editorHint.foreground",
+        "editorInfo.foreground",
+        "editorOverviewRuler.infoForeground",
+        "gitDecoration.modifiedResourceForeground",
+        "inputValidation.infoBorder",
+        "notificationsInfoIcon.foreground",
+        "problemsInfoIcon.foreground"
+      ]
+    },
+    {
+      "value": "$success/E6",
+      "keys": [
+        "chat.linesAddedForeground"
+      ]
+    },
+    {
+      "value": "$error/E6",
+      "keys": [
+        "chat.linesRemovedForeground"
+      ]
+    },
+    {
+      "value": "$panel",
+      "keys": [
+        "chat.requestBackground",
+        "diffEditor.unchangedRegionBackground",
+        "editor.lineHighlightBackground",
+        "editorInlayHint.background",
+        "inlineChatInput.background",
+        "inlineEdit.gutterIndicator.background",
+        "inlineEdit.gutterIndicator.primaryBackground",
+        "inlineEdit.gutterIndicator.secondaryBackground",
+        "inlineEdit.gutterIndicator.successfulBackground",
+        "multiDiffEditor.headerBackground",
+        "panel.background",
+        "peekViewEditor.background",
+        "sideBar.background",
+        "sideBarSectionHeader.background",
+        "tab.inactiveBackground",
+        "textBlockQuote.background",
+        "textCodeBlock.background",
+        "textPreformat.background"
+      ]
+    },
+    {
+      "value": "$panel/E6",
+      "keys": [
+        "chat.requestBubbleBackground"
+      ]
+    },
+    {
+      "value": "$selection/90",
+      "keys": [
+        "chat.requestBubbleHoverBackground"
+      ]
+    },
+    {
+      "value": "$control/CC",
+      "keys": [
+        "chat.requestCodeBorder"
+      ]
+    },
+    {
+      "value": "$muted/E6",
+      "keys": [
+        "chat.thinkingShimmer"
+      ]
+    },
+    {
+      "value": "$raised",
+      "keys": [
+        "debugExceptionWidget.background",
+        "debugToolBar.background",
+        "dropdown.background",
+        "dropdown.listBackground",
+        "editorHoverWidget.background",
+        "editorHoverWidget.statusBarBackground",
+        "editorSuggestWidget.background",
+        "editorWidget.background",
+        "inlineChat.background",
+        "input.background",
+        "inputValidation.errorBackground",
+        "inputValidation.infoBackground",
+        "inputValidation.warningBackground",
+        "menu.background",
+        "notificationCenterHeader.background",
+        "notifications.background",
+        "peekViewResult.background",
+        "peekViewTitle.background",
+        "quickInput.background",
+        "quickInputTitle.background"
+      ]
+    },
+    {
+      "value": "$error",
+      "keys": [
+        "debugExceptionWidget.border",
+        "debugIcon.breakpointForeground",
+        "diffEditorGutter.removedLineBackground",
+        "diffEditorOverview.removedForeground",
+        "editorBracketHighlight.unexpectedBracket.foreground",
+        "editorError.foreground",
+        "editorGutter.deletedBackground",
+        "editorOverviewRuler.errorForeground",
+        "errorForeground",
+        "gitDecoration.conflictingResourceForeground",
+        "gitDecoration.deletedResourceForeground",
+        "inputValidation.errorBorder",
+        "list.errorForeground",
+        "minimap.errorHighlight",
+        "notificationsErrorIcon.foreground",
+        "problemsErrorIcon.foreground",
+        "terminal.ansiBrightRed",
+        "terminal.ansiRed",
+        "terminalCommandDecoration.errorBackground",
+        "testing.iconFailed",
+        "testing.message.error.badgeForeground"
+      ]
+    },
+    {
+      "value": "$warning",
+      "keys": [
+        "debugIcon.breakpointCurrentStackframeForeground",
+        "debugIcon.breakpointStackframeForeground",
+        "editorOverviewRuler.warningForeground",
+        "editorWarning.foreground",
+        "inputValidation.warningBorder",
+        "list.warningForeground",
+        "minimap.warningHighlight",
+        "notificationsWarningIcon.foreground",
+        "problemsWarningIcon.foreground",
+        "terminal.ansiBrightYellow",
+        "terminalOverviewRuler.findMatchForeground",
+        "testing.iconQueued",
+        "testing.iconUnset"
+      ]
+    },
+    {
+      "value": "$success/10",
+      "keys": [
+        "diffEditor.insertedLineBackground",
+        "inlineEdit.modifiedChangedLineBackground"
+      ]
+    },
+    {
+      "value": "$success/18",
+      "keys": [
+        "diffEditor.insertedTextBackground",
+        "inlineChatDiff.inserted",
+        "inlineEdit.modifiedChangedTextBackground"
+      ]
+    },
+    {
+      "value": "$error/10",
+      "keys": [
+        "diffEditor.removedLineBackground",
+        "inlineEdit.originalChangedLineBackground"
+      ]
+    },
+    {
+      "value": "$error/18",
+      "keys": [
+        "diffEditor.removedTextBackground",
+        "inlineChatDiff.removed",
+        "inlineEdit.originalChangedTextBackground"
+      ]
+    },
+    {
+      "value": "$success",
+      "keys": [
+        "diffEditorGutter.insertedLineBackground",
+        "diffEditorOverview.insertedForeground",
+        "editorGutter.addedBackground",
+        "gitDecoration.addedResourceForeground",
+        "gitDecoration.untrackedResourceForeground",
+        "inlineEdit.gutterIndicator.successfulBorder",
+        "terminal.ansiGreen",
+        "terminalCommandDecoration.defaultBackground",
+        "testing.iconPassed",
+        "testing.message.info.decorationForeground"
+      ]
+    },
+    {
+      "value": "$accent/10",
+      "keys": [
+        "editor.findMatchHighlightBackground",
+        "editor.wordHighlightBackground",
+        "editor.wordHighlightTextBackground",
+        "editorBracketMatch.background",
+        "peekViewEditor.matchHighlightBackground",
+        "peekViewResult.matchHighlightBackground",
+        "terminal.findMatchHighlightBackground"
+      ]
+    },
+    {
+      "value": "$accent/08",
+      "keys": [
+        "editor.findRangeHighlightBackground",
+        "editor.rangeHighlightBackground",
+        "merge.currentContentBackground"
+      ]
+    },
+    {
+      "value": "$warning/10",
+      "keys": [
+        "editor.focusedStackFrameHighlightBackground",
+        "editor.stackFrameHighlightBackground"
+      ]
+    },
+    {
+      "value": "$selection/80",
+      "keys": [
+        "editor.inactiveSelectionBackground"
+      ]
+    },
+    {
+      "value": "$accent/18",
+      "keys": [
+        "editor.wordHighlightStrongBackground",
+        "merge.currentHeaderBackground",
+        "terminal.findMatchBackground"
+      ]
+    },
+    {
+      "value": "$type",
+      "keys": [
+        "editorBracketHighlight.foreground2",
+        "editorBracketHighlight.foreground5",
+        "gitDecoration.renamedResourceForeground"
+      ]
+    },
+    {
+      "value": "$keyword",
+      "keys": [
+        "editorBracketHighlight.foreground3",
+        "editorBracketHighlight.foreground6",
+        "terminal.ansiBrightMagenta",
+        "terminal.ansiMagenta"
+      ]
+    },
+    {
+      "value": "$line",
+      "keys": [
+        "editorGutter.foldingControlForeground",
+        "editorLineNumber.foreground"
+      ]
+    },
+    {
+      "value": "#000000FF",
+      "keys": [
+        "editorUnnecessaryCode.opacity"
+      ]
+    },
+    {
+      "value": "#00000030",
+      "keys": [
+        "inlineChat.shadow",
+        "scrollbar.shadow",
+        "widget.shadow"
+      ]
+    },
+    {
+      "value": "$bg/00",
+      "keys": [
+        "inlineEdit.modifiedBackground",
+        "inlineEdit.originalBackground"
+      ]
+    },
+    {
+      "value": "$keyword/08",
+      "keys": [
+        "merge.commonContentBackground"
+      ]
+    },
+    {
+      "value": "$keyword/18",
+      "keys": [
+        "merge.commonHeaderBackground"
+      ]
+    },
+    {
+      "value": "$info/08",
+      "keys": [
+        "merge.incomingContentBackground"
+      ]
+    },
+    {
+      "value": "$info/18",
+      "keys": [
+        "merge.incomingHeaderBackground"
+      ]
+    },
+    {
+      "value": "$accent/80",
+      "keys": [
+        "minimap.findMatchHighlight"
+      ]
+    },
+    {
+      "value": "#FFFFFFA0",
+      "keys": [
+        "minimap.foregroundOpacity"
+      ]
+    },
+    {
+      "value": "$selection/A0",
+      "keys": [
+        "minimap.selectionHighlight"
+      ]
+    },
+    {
+      "value": "$control/BB",
+      "keys": [
+        "scrollbarSlider.activeBackground"
+      ]
+    },
+    {
+      "value": "$control/55",
+      "keys": [
+        "scrollbarSlider.background"
+      ]
+    },
+    {
+      "value": "$control/88",
+      "keys": [
+        "scrollbarSlider.hoverBackground"
+      ]
+    },
+    {
+      "value": "$function",
+      "keys": [
+        "terminal.ansiBlue",
+        "terminal.ansiBrightBlue"
+      ]
+    },
+    {
+      "value": "$string",
+      "keys": [
+        "terminal.ansiBrightGreen",
+        "textPreformat.foreground"
+      ]
+    },
+    {
+      "value": "$number",
+      "keys": [
+        "terminal.ansiYellow"
+      ]
+    }
+  ],
+  "variants": {
+    "night": {
+      "button.hoverBackground": "#93E4D8"
+    },
+    "day": {
+      "button.hoverBackground": "#005C55"
+    },
+    "contrast": {
+      "button.hoverBackground": "#B1FFEF",
+      "contrastActiveBorder": "$accent",
+      "contrastBorder": "$border",
+      "editor.selectionForeground": "$fg"
+    }
+  }
+}

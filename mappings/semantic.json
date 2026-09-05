@@ -1,0 +1,141 @@
+{
+  "keyword": {
+    "foreground": "$keyword",
+    "bold": false,
+    "italic": false
+  },
+  "modifier": {
+    "foreground": "$keyword",
+    "bold": false,
+    "italic": false
+  },
+  "decorator": {
+    "foreground": "$keyword",
+    "bold": false,
+    "italic": false
+  },
+  "type": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "class": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "interface": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "struct": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "enum": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "typeParameter": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "function": {
+    "foreground": "$function",
+    "bold": false,
+    "italic": false
+  },
+  "method": {
+    "foreground": "$function",
+    "bold": false,
+    "italic": false
+  },
+  "macro": {
+    "foreground": "$function",
+    "bold": false,
+    "italic": false
+  },
+  "variable": {
+    "foreground": "$fg",
+    "bold": false,
+    "italic": false
+  },
+  "property": {
+    "foreground": "$property",
+    "bold": false,
+    "italic": false
+  },
+  "event": {
+    "foreground": "$property",
+    "bold": false,
+    "italic": false
+  },
+  "namespace": {
+    "foreground": "$property",
+    "bold": false,
+    "italic": false
+  },
+  "label": {
+    "foreground": "$property",
+    "bold": false,
+    "italic": false
+  },
+  "parameter": {
+    "foreground": "$parameter",
+    "bold": false,
+    "italic": false
+  },
+  "number": {
+    "foreground": "$number",
+    "bold": false,
+    "italic": false
+  },
+  "enumMember": {
+    "foreground": "$number",
+    "bold": false,
+    "italic": false
+  },
+  "variable.readonly": {
+    "foreground": "$number",
+    "bold": false,
+    "italic": false
+  },
+  "property.readonly": {
+    "foreground": "$number",
+    "bold": false,
+    "italic": false
+  },
+  "string": {
+    "foreground": "$string",
+    "bold": false,
+    "italic": false
+  },
+  "regexp": {
+    "foreground": "$string",
+    "bold": false,
+    "italic": false
+  },
+  "comment": {
+    "foreground": "$muted",
+    "bold": false,
+    "italic": false
+  },
+  "operator": {
+    "foreground": "$operator",
+    "bold": false,
+    "italic": false
+  },
+  "*.deprecated": {
+    "strikethrough": true
+  },
+  "variable.reassigned:csharp": {
+    "underline": true
+  },
+  "parameter.reassigned:csharp": {
+    "underline": true
+  }
+}
