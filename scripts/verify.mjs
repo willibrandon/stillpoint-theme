@@ -1,6 +1,5 @@
 import { readFile, access } from 'node:fs/promises';
-import { execFileSync } from 'node:child_process';
-import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { Script } from 'node:vm';
 import textmate from 'vscode-textmate';
@@ -9,12 +8,17 @@ const { Registry, parseRawGrammar } = textmate;
 const { loadWASM, OnigScanner, OnigString } = oniguruma;
 
 const root = new URL('../',import.meta.url);
-const reference = fileURLToPath(new URL('../../vscode/',import.meta.url));
-const git = (...args) => execFileSync('git',['-C',reference,...args],{encoding:'utf8',maxBuffer:32*1024*1024,env:{...process.env,GIT_OPTIONAL_LOCKS:'0'}});
 const read = path => readFile(new URL(path,root),'utf8');
 const manifest=JSON.parse(await read('package.json'));
 assert.equal(manifest.main,undefined,'Theme must not activate runtime code');
 assert.equal(manifest.browser,undefined,'Theme must not activate browser code');
+assert.equal(manifest.activationEvents,undefined,'Asset-only extension must not declare activation events');
+assert.deepEqual(Object.keys(manifest.contributes), ['themes']);
+assert.equal(manifest.repository?.url, 'https://github.com/willibrandon/stillpoint-theme.git');
+const icon = await readFile(new URL(manifest.icon, root));
+assert.equal(icon.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', 'Icon must be PNG');
+assert.equal(icon.readUInt32BE(16), 256, 'Icon width');
+assert.equal(icon.readUInt32BE(20), 256, 'Icon height');
 assert.equal(manifest.contributes.themes.length,3);
 const registrations=JSON.parse(await read('validation/vscode-colors-1.136.1.json')).colors;
 const palettes=JSON.parse(await read('palette.json'));
@@ -38,32 +42,21 @@ console.log('Manifest, public color registrations, semantic selector syntax, and
 
 const wasm=await readFile(new URL('node_modules/vscode-oniguruma/release/onig.wasm',root));
 await loadWASM(wasm.buffer.slice(wasm.byteOffset,wasm.byteOffset+wasm.byteLength));
-const grammarFiles={
-  'source.ts':'extensions/typescript-basics/syntaxes/TypeScript.tmLanguage.json',
-  'source.cs':'extensions/csharp/syntaxes/csharp.tmLanguage.json',
-  'source.go':'extensions/go/syntaxes/go.tmLanguage.json',
-  'source.json':'extensions/json/syntaxes/JSON.tmLanguage.json',
-  'source.sql':'extensions/sql/syntaxes/sql.tmLanguage.json',
-  'source.shell':'extensions/shellscript/syntaxes/shell-unix-bash.tmLanguage.json',
-  'source.python':'extensions/python/syntaxes/MagicPython.tmLanguage.json',
-  'source.java':'extensions/java/syntaxes/java.tmLanguage.json',
-  'source.rust':'extensions/rust/syntaxes/rust.tmLanguage.json',
-  'source.yaml':'extensions/yaml/syntaxes/yaml.tmLanguage.json',
-  'source.yaml.1.0':'extensions/yaml/syntaxes/yaml-1.0.tmLanguage.json',
-  'source.yaml.1.1':'extensions/yaml/syntaxes/yaml-1.1.tmLanguage.json',
-  'source.yaml.1.2':'extensions/yaml/syntaxes/yaml-1.2.tmLanguage.json',
-  'source.yaml.1.3':'extensions/yaml/syntaxes/yaml-1.3.tmLanguage.json',
-  'source.yaml.embedded':'extensions/yaml/syntaxes/yaml-embedded.tmLanguage.json',
-  'source.ini':'extensions/ini/syntaxes/ini.tmLanguage.json',
-  'source.css':'extensions/css/syntaxes/css.tmLanguage.json'
-};
+const grammarManifest = JSON.parse(await read('validation/grammars/manifest.json'));
 const grammarCache = new Map();
-function raw(scope){
-  const path=grammarFiles[scope];
-  if(!path)return null;
-  if(!grammarCache.has(path))grammarCache.set(path,parseRawGrammar(git('show',`1.136.1:${path}`),path));
-  return grammarCache.get(path);
+for (const entry of grammarManifest.files) {
+  assert.match(entry.ref, /^[a-f0-9]{40}$/);
+  assert.match(entry.sha256, /^[a-f0-9]{64}$/);
+  const content = await readFile(new URL('validation/grammars/' + entry.file, root));
+  assert.equal(createHash('sha256').update(content).digest('hex'), entry.sha256, 'Vendored integrity: ' + entry.file);
+  if (entry.scope) {
+    const grammar = parseRawGrammar(content.toString(), entry.file);
+    assert.equal(grammar.scopeName, entry.scope);
+    assert.ok(!grammarCache.has(entry.scope), 'Duplicate grammar scope');
+    grammarCache.set(entry.scope, grammar);
+  }
 }
+const raw = scope => grammarCache.get(scope) ?? null;
 const cases=[
   {scope:'source.ts',line:'const count = 42;',needle:'42',role:'number'},
   {scope:'source.ts',line:'// A comment remains readable',needle:'comment',role:'muted'},
@@ -95,6 +88,15 @@ const cases=[
   {scope:'source.java',line:'List<String> names = new ArrayList<>();',needle:'String',role:'type'},
   {scope:'source.yaml',line:'status: ready',needle:'status',role:'property'},
   {scope:'source.ini',line:'status=ready',needle:'status',role:'property'},
+  {scope:'source.toml',line:'status = "ready"',needle:'status',role:'property'},
+  {scope:'source.toml',line:'"quoted-key" = 42',needle:'quoted-key',role:'property'},
+  {scope:'source.toml',line:'inline = { key = 42 }',needle:'key',role:'property'},
+  {scope:'source.systemd',line:'ExecStart=/usr/bin/app',needle:'ExecStart',role:'property'},
+  {scope:'source.caddyfile',line:'reverse_proxy localhost:8080',needle:'reverse_proxy',role:'property'},
+  {scope:'source.vhs',line:'Set FontSize 16',needle:'FontSize',role:'property'},
+  {scope:'source.logrotate',line:'rotate 7',needle:'rotate',role:'property'},
+  {scope:'source.vhs',line:'Sleep 500ms',needle:'500',role:'number'},
+  {scope:'source.logrotate',line:'create 0640 root adm',needle:'0640',role:'number'},
   {scope:'source.python',line:'result = inspect(value)',needle:'inspect',role:'function'},
   {scope:'source.python',line:'result = inspect(value)',needle:'value',role:'fg'},
   {scope:'source.python',line:'@memoize',needle:'@',role:'keyword'},

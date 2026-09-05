@@ -6,7 +6,8 @@ for (const [script, ...args] of [
   ['scripts/build.mjs', '--check'],
   ['verify-palette.mjs'],
   ['scripts/verify-coverage.mjs'],
-  ['scripts/verify.mjs']
+  ['scripts/verify.mjs'],
+  ['scripts/verify-package.mjs']
 ]) {
   const result = spawnSync(process.execPath, [script, ...args], { stdio: 'inherit' });
   if (result.error) console.error(result.error);

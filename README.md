@@ -4,7 +4,7 @@ Calm surfaces. Precise semantic color.
 
 Stillpoint is a VS Code color theme built around language tooling, terminals, structured logs, and code review. It includes graphite **Night**, warm-paper **Day**, and dark **Contrast** variants.
 
-This is a local 0.1.0 preview for VS Code 1.136 or later. It has no runtime entry point, network access, telemetry, or automatic settings changes.
+This is an unreleased local preview for VS Code 1.136 or later. It has no runtime entry point, network access, telemetry, or automatic settings changes.
 
 ## Install the local package
 
@@ -39,6 +39,10 @@ npm run check
 npm run package
 ```
 
-`palette.json` and `scripts/build.mjs` are the editable sources. Generated files must stay in sync. Local grammar validation uses the sibling `../vscode` checkout at tag `1.136.1` as a read-only reference.
+Edit `palette.json` and `mappings/{workbench,textmate,semantic}.json`, then rebuild. `scripts/state-palette.mjs` solves state washes separately from readable text colors. Do not hand-edit generated themes.
+
+`npm run check` verifies generated output, schema registrations, transparency, default-color coverage, 4,148 color/state comparisons, and 201 real-grammar cases. It reads committed, checksum-verified grammars; no sibling checkout or network is needed after `npm ci`. Review intentionally inherited colors in `validation/accepted-defaults.json` and the generated `output/reports/default-coverage.json`.
+
+See [validation instructions](validation/README.md) for isolated real-editor captures and refreshing pinned references. Screenshots cover diff, merge, diagnostic selection, debugger Variables, inlay hints, Quick Pick, SCM graph, and terminal output in all three variants. Capture artifacts stay local under `output/playwright/`.
 
 This preview includes measured palette validation. Complete editor accessibility, cross-platform compatibility, and comfort claims still require broader testing and extended use.

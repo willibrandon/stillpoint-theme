@@ -1,0 +1,230 @@
+{
+  "description": "Unmodified real TextMate grammars, pinned source commits and SHA-256 integrity. Licenses and upstream contributor metadata are retained. Development-only; excluded from VSIX.",
+  "files": [
+    {
+      "scope": "source.ts",
+      "file": "source.ts.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/typescript-basics/syntaxes/TypeScript.tmLanguage.json",
+      "sha256": "4e92e0d7de560217d6c8d3236d85e6e17a5d77825b15729a230c761743122661"
+    },
+    {
+      "scope": "source.cs",
+      "file": "source.cs.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/csharp/syntaxes/csharp.tmLanguage.json",
+      "sha256": "152d4586a2ddf5184216928a99d1e17620aebcce13f5fd96735f43218fbd1c1c"
+    },
+    {
+      "scope": "source.go",
+      "file": "source.go.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/go/syntaxes/go.tmLanguage.json",
+      "sha256": "de8f2fa64ff273ecd3bfd815164c460e2e406759fb7c8ffabf6cb3639a0efc5f"
+    },
+    {
+      "scope": "source.json",
+      "file": "source.json.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/json/syntaxes/JSON.tmLanguage.json",
+      "sha256": "d7238f1cc9033993b9816b0945cab4bb8ea108de0399663c551f28f913e94c70"
+    },
+    {
+      "scope": "source.sql",
+      "file": "source.sql.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/sql/syntaxes/sql.tmLanguage.json",
+      "sha256": "284a00c971983e532aa0abd40cc0fa2e4c62f783014f022747a7800e8244f963"
+    },
+    {
+      "scope": "source.shell",
+      "file": "source.shell.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/shellscript/syntaxes/shell-unix-bash.tmLanguage.json",
+      "sha256": "838a597b9bbc29bcfc89ca0190118550ae57517ec3e4b4baa1f8500edcf601d1"
+    },
+    {
+      "scope": "source.python",
+      "file": "source.python.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/python/syntaxes/MagicPython.tmLanguage.json",
+      "sha256": "ca981430eb3df004f4955bb7cba51ad06c4d8408d168c81eec7059d7d9aec5c8"
+    },
+    {
+      "scope": "source.java",
+      "file": "source.java.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/java/syntaxes/java.tmLanguage.json",
+      "sha256": "7152b50446fc97b2abf78755958ed8d27729b53365465ed89b6edebc1a6e9ba3"
+    },
+    {
+      "scope": "source.rust",
+      "file": "source.rust.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/rust/syntaxes/rust.tmLanguage.json",
+      "sha256": "015f28e49b5bd4f2b2bb9863cd62e5831a4b570d8b65fe24a7df9b25312da75f"
+    },
+    {
+      "scope": "source.yaml",
+      "file": "source.yaml.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml.tmLanguage.json",
+      "sha256": "17f25b037d082408b3ac7af5bb53e94125cc1a47857a75da451d6ea4ac0602df"
+    },
+    {
+      "scope": "source.yaml.1.0",
+      "file": "source.yaml.1.0.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml-1.0.tmLanguage.json",
+      "sha256": "6e521c226b702f17fca01ee380479e77350ac754fc4bc127d997ab52c140bd1e"
+    },
+    {
+      "scope": "source.yaml.1.1",
+      "file": "source.yaml.1.1.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml-1.1.tmLanguage.json",
+      "sha256": "577102ecafb5a6fe88b766ceed020c2cc32aa16f82556ae36385f23f7b834963"
+    },
+    {
+      "scope": "source.yaml.1.2",
+      "file": "source.yaml.1.2.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml-1.2.tmLanguage.json",
+      "sha256": "1e62af3f7ccccce7ed45b4ee4f3d8461b7e9c3bee42d40b0057934ba6dd62f80"
+    },
+    {
+      "scope": "source.yaml.1.3",
+      "file": "source.yaml.1.3.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml-1.3.tmLanguage.json",
+      "sha256": "4d2eb8e4139b82a610e4f02a0f663ebbb183d4d5e97b3f098a5a844f4efcf6b0"
+    },
+    {
+      "scope": "source.yaml.embedded",
+      "file": "source.yaml.embedded.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/yaml/syntaxes/yaml-embedded.tmLanguage.json",
+      "sha256": "b63b60dfef3237d9c51c7dfd2a488735ecc8e22fdb1a0e8fa8b34d2f77bf873e"
+    },
+    {
+      "scope": "source.ini",
+      "file": "source.ini.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/ini/syntaxes/ini.tmLanguage.json",
+      "sha256": "a46613bd993739695cb62be04d23c5d779754bce9fda8a6ead61ecd4616f95fd"
+    },
+    {
+      "scope": "source.css",
+      "file": "source.css.json",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "extensions/css/syntaxes/css.tmLanguage.json",
+      "sha256": "55a3e184f702da6a5a64dc4d7ce82ab298a1bae8d35e2924483941eb223d54b1"
+    },
+    {
+      "scope": "source.systemd",
+      "file": "source.systemd.json",
+      "repository": "willibrandon/vscode-systemd",
+      "ref": "c0a9a9c8a87ee3a38802f4f98235f4709194b7bf",
+      "path": "syntaxes/systemd.tmLanguage.json",
+      "sha256": "78d87755db901553c69192c338b58a5803646370decbb9e85992faf1336b04bc"
+    },
+    {
+      "scope": "source.caddyfile",
+      "file": "source.caddyfile.json",
+      "repository": "willibrandon/vscode-caddyfile",
+      "ref": "bb0edc4c983aef1680909285e9f99546f9f436ae",
+      "path": "syntaxes/caddyfile.tmLanguage.json",
+      "sha256": "1764cebd2f9b692cd46fd90c631305866d8efe4a0fb95f70384be895dee31f1e"
+    },
+    {
+      "scope": "source.vhs",
+      "file": "source.vhs.json",
+      "repository": "willibrandon/vscode-vhs",
+      "ref": "cc75f5555c599c0f636d82f3fe3c7bce362083bd",
+      "path": "syntaxes/vhs.tmLanguage.json",
+      "sha256": "a5fba8f7ba48b1fb5f9feb2e8570f6822e117ed990afb11e7e1342372cafab34"
+    },
+    {
+      "scope": "source.logrotate",
+      "file": "source.logrotate.json",
+      "repository": "willibrandon/vscode-logrotate",
+      "ref": "c373abd822308b67feb869bc739ef7c73811ce35",
+      "path": "syntaxes/logrotate.tmLanguage.json",
+      "sha256": "382a8c5b0f5a4a9130edf62ca1a5062ca5f5070bac9b4d4da7e876d3ad2476fe"
+    },
+    {
+      "scope": "source.toml",
+      "file": "source.toml.json",
+      "repository": "tamasfe/taplo",
+      "ref": "08f343be02ce1b20296470396a42f0fa47820449",
+      "path": "editors/vscode/toml.tmLanguage.json",
+      "sha256": "535d51829eee1b852589f501344d88348aa0b8a630285406f004cc51de656a33"
+    },
+    {
+      "file": "licenses/microsoft-vscode.txt",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "LICENSE.txt",
+      "sha256": "9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9"
+    },
+    {
+      "file": "licenses/willibrandon-vscode-systemd.txt",
+      "repository": "willibrandon/vscode-systemd",
+      "ref": "c0a9a9c8a87ee3a38802f4f98235f4709194b7bf",
+      "path": "LICENSE",
+      "sha256": "f74f925ccd6fc2f4b9bdf7682f6927a64809c8668e8232997c541cc6f992787b"
+    },
+    {
+      "file": "licenses/willibrandon-vscode-caddyfile.txt",
+      "repository": "willibrandon/vscode-caddyfile",
+      "ref": "bb0edc4c983aef1680909285e9f99546f9f436ae",
+      "path": "LICENSE",
+      "sha256": "f74f925ccd6fc2f4b9bdf7682f6927a64809c8668e8232997c541cc6f992787b"
+    },
+    {
+      "file": "licenses/willibrandon-vscode-vhs.txt",
+      "repository": "willibrandon/vscode-vhs",
+      "ref": "cc75f5555c599c0f636d82f3fe3c7bce362083bd",
+      "path": "LICENSE",
+      "sha256": "f74f925ccd6fc2f4b9bdf7682f6927a64809c8668e8232997c541cc6f992787b"
+    },
+    {
+      "file": "licenses/willibrandon-vscode-logrotate.txt",
+      "repository": "willibrandon/vscode-logrotate",
+      "ref": "c373abd822308b67feb869bc739ef7c73811ce35",
+      "path": "LICENSE",
+      "sha256": "f74f925ccd6fc2f4b9bdf7682f6927a64809c8668e8232997c541cc6f992787b"
+    },
+    {
+      "file": "licenses/tamasfe-taplo.txt",
+      "repository": "tamasfe/taplo",
+      "ref": "08f343be02ce1b20296470396a42f0fa47820449",
+      "path": "editors/vscode/LICENSE.md",
+      "sha256": "552604656340642782345c47dda89218136f141a25aaecdfd1501180841ff98b"
+    },
+    {
+      "file": "licenses/vscode-ThirdPartyNotices.txt",
+      "repository": "microsoft/vscode",
+      "ref": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+      "path": "ThirdPartyNotices.txt",
+      "sha256": "4cb210d0c8f8fa304b37a31d44436ebf86dff59466a4033fbcd0c401d63c6568"
+    }
+  ]
+}
