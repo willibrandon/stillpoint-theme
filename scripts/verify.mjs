@@ -57,6 +57,14 @@ for (const entry of grammarManifest.files) {
   }
 }
 const raw = scope => grammarCache.get(scope) ?? null;
+const xmlDocs = JSON.parse(await read('validation/xml-doc-cases.json'));
+const xmlDocLines = (await read('fixtures/' + xmlDocs.fixture)).split('\n');
+// Exercise Microsoft's semantic fallback scopes, independently of the C# grammar.
+const fallbackScope = 'source.stillpoint-xml-doc-fallback';
+grammarCache.set(fallbackScope, {
+  scopeName: fallbackScope,
+  patterns: xmlDocs.semantic.map(({ type, scope }) => ({ match: '^' + type + '$', name: scope }))
+});
 const cases=[
   {scope:'source.ts',line:'const count = 42;',needle:'42',role:'number'},
   {scope:'source.ts',line:'// A comment remains readable',needle:'comment',role:'comment'},
@@ -109,6 +117,7 @@ const cases=[
   {scope:'source.css',line:'a { width: 12px; }',needle:'px',role:'number'}
 ];
 let tokenChecks=0;
+let xmlDocSemanticChecks=0;
 const tokenFailures=[];
 for(const [variant,p] of Object.entries(palettes)){
   const theme=JSON.parse(await read(`themes/stillpoint-${variant}.json`));
@@ -127,9 +136,42 @@ for(const [variant,p] of Object.entries(palettes)){
     if(foreground?.toUpperCase()!==p[c.role].toUpperCase()) tokenFailures.push({variant,...c,actual:foreground,expected:p[c.role],scopes:grammar.tokenizeLine(c.line,null).tokens.find(token=>token.startIndex<=position&&token.endIndex>position)?.scopes});
     tokenChecks++;
   }
+  const csharp = await registry.loadGrammar('source.cs');
+  let state = null;
+  const docTokens = xmlDocLines.map(line => {
+    const result = csharp.tokenizeLine2(line, state);
+    state = result.ruleStack;
+    return result.tokens;
+  });
+  for (const c of xmlDocs.cases) {
+    const lineIndex = xmlDocLines.findIndex(line => line.includes(c.line));
+    assert.ok(lineIndex >= 0, 'Missing XML documentation fixture line: ' + c.line);
+    const line = xmlDocLines[lineIndex];
+    const start = line.indexOf(c.text);
+    assert.ok(start >= 0, 'Missing XML documentation text: ' + c.text);
+    const tokens = docTokens[lineIndex];
+    // Check the entire range, including closing quotes, entities, and delimiters.
+    for (let i = 0; i < tokens.length; i += 2) {
+      if (tokens[i] >= start + c.text.length || (tokens[i + 2] ?? line.length) <= start) continue;
+      const actual = registry.getColorMap()[(tokens[i + 1] >>> 15) & 511];
+      if (actual !== p[c.role]) tokenFailures.push({ variant, ...c, actual, expected: p[c.role] });
+    }
+    tokenChecks++;
+  }
+  const fallback = await registry.loadGrammar(fallbackScope);
+  for (const c of xmlDocs.semantic) {
+    const selector = c.type + ':csharp';
+    const actual = theme.semanticTokenColors[selector]?.foreground;
+    if (actual !== p[c.role]) tokenFailures.push({ variant, selector, actual, expected: p[c.role] });
+    const result = fallback.tokenizeLine2(c.type, null);
+    const fallbackColor = registry.getColorMap()[(result.tokens[1] >>> 15) & 511];
+    if (fallbackColor !== p[c.role]) tokenFailures.push({ variant, scope: c.scope, actual: fallbackColor, expected: p[c.role] });
+    xmlDocSemanticChecks += 2;
+  }
   registry.dispose();
 }
 console.log(`${tokenChecks} real-grammar color checks; ${tokenFailures.length} failures.`);
+console.log(`${xmlDocSemanticChecks} XML documentation semantic/fallback checks.`);
 for(const failure of tokenFailures)console.error(JSON.stringify(failure));
 if(tokenFailures.length)process.exitCode=1;
 try {

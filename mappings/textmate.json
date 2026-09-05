@@ -466,10 +466,83 @@
     }
   },
   {
-    "name": "XML doc tags",
+    "name": "XML documentation prose",
     "scope": [
-      "comment entity.name.tag",
-      "comment entity.other.attribute-name"
+      "comment.documentation.cs"
+    ],
+    "settings": {
+      "foreground": "$comment",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML documentation tags",
+    "scope": [
+      "comment.block.documentation.cs entity.name.tag",
+      "comment.documentation.name.cs"
+    ],
+    "settings": {
+      "foreground": "$type",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML documentation attributes",
+    "scope": [
+      "comment.block.documentation.cs entity.other.attribute-name",
+      "comment.documentation.attribute.name.cs"
+    ],
+    "settings": {
+      "foreground": "$property",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML documentation values and quotes",
+    "scope": [
+      "comment.block.documentation.cs string",
+      "comment.block.documentation.cs punctuation.definition.string",
+      "comment.documentation.attribute.value.cs",
+      "comment.documentation.attribute.quotes.cs",
+      "comment.documentation.cdata.cs"
+    ],
+    "settings": {
+      "foreground": "$string",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML documentation delimiters",
+    "scope": [
+      "comment.block.documentation.cs punctuation.definition.comment",
+      "comment.block.documentation.cs punctuation.definition.tag",
+      "comment.block.documentation.cs punctuation.separator",
+      "comment.documentation.delimiter.cs",
+      "comment.documentation.processingInstruction.cs"
+    ],
+    "settings": {
+      "foreground": "$operator",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "XML documentation entities",
+    "scope": [
+      "comment.block.documentation.cs constant.character.entity",
+      "comment.block.documentation.cs constant.character.entity punctuation",
+      "comment.documentation.entityReference.cs"
+    ],
+    "settings": {
+      "foreground": "$keyword",
+      "fontStyle": ""
+    }
+  },
+  {
+    "name": "Comments inside XML documentation",
+    "scope": [
+      "comment.block.documentation.cs comment.block.cs",
+      "comment.block.documentation.cs comment.block.cs punctuation.definition.comment.cs",
+      "comment.documentation.comment.cs"
     ],
     "settings": {
       "foreground": "$comment",

@@ -13,6 +13,7 @@ exports.run = async () => {
   const config = async (key, value) => vscode.workspace.getConfiguration().update(key, value, vscode.ConfigurationTarget.Global);
   for (const [key, value] of Object.entries({
     'workbench.startupEditor': 'none', 'workbench.tips.enabled': false,
+    'window.autoDetectColorScheme': false, 'window.autoDetectHighContrast': false,
     'editor.fontSize': 15, 'editor.minimap.enabled': false, 'editor.renderWhitespace': 'all',
     'editor.inlayHints.enabled': 'on', 'editor.semanticHighlighting.enabled': true,
     'typescript.inlayHints.parameterNames.enabled': 'all', 'typescript.inlayHints.variableTypes.enabled': true,
@@ -23,6 +24,9 @@ exports.run = async () => {
     'debug.openDebug': 'openOnDebugBreak',
     'window.commandCenter': true
   })) await config(key, value);
+  // Start from a known setting so a reused profile's cached startup theme cannot
+  // make the first Day request a no-op while the renderer is still on Night.
+  await config('workbench.colorTheme', 'Stillpoint Night');
   const diagnostics = vscode.languages.createDiagnosticCollection('stillpoint-review');
   const diagnostic = new vscode.Diagnostic(new vscode.Range(11, 6, 11, 11), 'Review fixture: number is not assignable to string', vscode.DiagnosticSeverity.Error);
   diagnostics.set(uri('review-states.ts'), [diagnostic]);
@@ -36,9 +40,11 @@ exports.run = async () => {
   const complete = new Promise(resolve => { finish = resolve; });
   const open = async file => vscode.window.showTextDocument(await vscode.workspace.openTextDocument(uri(file)), { preview: false });
   const setup = async ({ variant, scene }) => {
+    let semanticTokenCount = 0;
     if (!['night', 'day', 'contrast'].includes(variant)) throw new Error('Unknown variant');
     const theme = JSON.parse(await fs.readFile(path.join(root, 'themes', `stillpoint-${variant}.json`), 'utf8'));
     await config('workbench.colorTheme', theme.name);
+    await config('editor.renderWhitespace', ['xml-docs', 'syntax'].includes(scene) ? 'none' : 'all');
     quickPick?.dispose();
     if (scene !== 'debugger' && vscode.debug.activeDebugSession) await vscode.debug.stopDebugging();
     await vscode.commands.executeCommand('workbench.action.closePanel');
@@ -49,6 +55,20 @@ exports.run = async () => {
     else if (scene === 'inline-merge') {
       await vscode.extensions.getExtension('vscode.merge-conflict').activate();
       await vscode.commands.executeCommand('vscode.openWith', uri('review-inline.ts'), 'default');
+    } else if (scene === 'xml-docs') {
+      const editor = await open('XmlDocumentation.cs');
+      editor.selection = new vscode.Selection(0, 0, 0, 0);
+      editor.revealRange(new vscode.Range(0, 0, 27, 0), vscode.TextEditorRevealType.AtTop);
+    } else if (scene === 'syntax') {
+      const editor = await open('review-syntax.ts');
+      editor.selection = new vscode.Selection(0, 0, 0, 0);
+      editor.revealRange(new vscode.Range(0, 0, 16, 0), vscode.TextEditorRevealType.AtTop);
+      for (let i = 0; i < 50 && !semanticTokenCount; i++) {
+        const tokens = await vscode.commands.executeCommand('vscode.provideDocumentSemanticTokens', editor.document.uri);
+        semanticTokenCount = (tokens?.data?.length ?? 0) / 5;
+        if (!semanticTokenCount) await delay(100);
+      }
+      if (!semanticTokenCount) throw new Error('Native TypeScript semantic tokens must be ready');
     } else if (/^unused-(roles|parameter|property|method|function|type)(-selected|-inactive)?$/.test(scene)) {
       const [, role, state] = scene.match(/^unused-(roles|parameter|property|method|function|type)(-selected|-inactive)?$/);
       const editor = await open('review-unused.ts');
@@ -104,7 +124,7 @@ exports.run = async () => {
       await require('./editor-suite.cjs').run();
     } else throw new Error('Unknown scene');
     await delay(scene === 'debugger' ? 2200 : 1000);
-    return { variant, scene, vscodeVersion: vscode.version, workspace, theme: theme.name, themeHash: createHash('sha256').update(JSON.stringify(theme)).digest('hex'), debugSession: vscode.debug.activeDebugSession?.name ?? null, diagnostics: vscode.languages.getDiagnostics(uri('review-states.ts')).map(d => d.message), repositories: git.repositories.length };
+    return { variant, scene, semanticTokenCount, vscodeVersion: vscode.version, workspace, theme: theme.name, themeHash: createHash('sha256').update(JSON.stringify(theme)).digest('hex'), debugSession: vscode.debug.activeDebugSession?.name ?? null, diagnostics: vscode.languages.getDiagnostics(uri('review-states.ts')).map(d => d.message), repositories: git.repositories.length };
   };
   const server = http.createServer(async (request, response) => {
     if (request.method !== 'POST' || request.headers.authorization !== `Bearer ${controlToken}`) { response.writeHead(403).end(); return; }

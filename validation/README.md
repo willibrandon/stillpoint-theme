@@ -36,6 +36,20 @@ update them, edit the source commits in the manifest, run the script with
 Only the separate registry-refresh script, `scripts/snapshot-vscode.mjs`, needs
 the sibling reference checkout. It never writes there.
 
+`xml-doc-cases.json` tests complete C# documentation ranges with multiline grammar
+state: tags, attribute names/quotes/values, entities, CDATA, nested comments, and
+ordinary-comment isolation. Its ten semantic token IDs and fallback scopes follow
+[Microsoft's C# extension](https://github.com/dotnet/vscode-csharp/blob/main/package.json).
+Both paths must agree with their palette roles; synthetic fallback probes are
+counted separately from real-grammar cases.
+
+Day additionally checks 28 pairs of generated syntax colors using a minimum
+Euclidean Oklab distance of 0.075. This is an art-direction regression threshold,
+not a WCAG requirement or a color-vision guarantee. It rejects the old near-black
+palette, neutralized syntax, and identical type/string colors. Foreground and seven
+colored roles are compared; comments, punctuation, and intentionally shared roles
+are excluded. Existing text-contrast and unused-opacity gates remain unchanged.
+
 ## Real-editor review on macOS
 
 Never run either editor suite against your normal profile. Both change settings.
@@ -61,10 +75,15 @@ Never run either editor suite against your normal profile. Both change settings.
 5. Run `node scripts/capture-scene.mjs night validate` for native schema checks,
    then `node scripts/capture-scene.mjs night finish` to close the test host.
 
-The 48 captures cover diff, three-way merge, diff3 inline conflict, selection over
+The 54-capture suite covers diff, three-way merge, diff3 inline conflict, selection over
 a diagnostic, inactive selection, unused code both selected and unselected,
 Explorer hover, paused debugger Variables, native TypeScript inlay hints, Quick
 Pick, a real Git graph, and terminal `ls`/`git diff`, in all three variants.
+The XML documentation scene also checks every fixture range against native
+TextMate-rendered CSS colors. It does not require or claim to run Roslyn;
+the fast gates separately validate its custom semantic rules and fallback scopes.
+The syntax scene adds a native TypeScript specimen checking seven colored roles,
+ordinary variables, and comments, including after semantic highlighting activates.
 The unused-role specimen adds normal, multi-selected, and unfocused multi-selected
 states for six identifier roles plus an entire unused import. Assertions check
 the native semantic foreground, unnecessary-opacity spans, real selection overlap,

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Give Day a brighter paper surface and more distinct violet, blue, teal, green, copper, and rose syntax; preserve selected-unused contrast and add color-separation regressions.
+- Distinguish C# XML documentation tags, attributes, values, entities, and prose in both TextMate and semantic highlighting.
 - Add Night, Day, and Contrast palettes with semantic and TextMate highlighting.
 - Cover workbench, terminal, diagnostics, review, tests, chat, and configuration-language scopes.
 - Improve diff and merge visibility with independently solved washes and word borders; keep ordinary, active, and dimmed diff line numbers readable.

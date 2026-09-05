@@ -6,6 +6,7 @@ for (const [script, ...args] of [
   ['scripts/build.mjs', '--check'],
   ['verify-palette.mjs'],
   ['scripts/verify-state-contracts.mjs'],
+  ['scripts/verify-syntax-distinction.mjs'],
   ['scripts/verify-coverage.mjs'],
   ['scripts/verify.mjs'],
   ['scripts/verify-package.mjs']

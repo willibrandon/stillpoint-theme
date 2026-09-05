@@ -124,6 +124,56 @@
     "bold": false,
     "italic": false
   },
+  "xmlDocCommentName:csharp": {
+    "foreground": "$type",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentAttributeName:csharp": {
+    "foreground": "$property",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentAttributeQuotes:csharp": {
+    "foreground": "$string",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentAttributeValue:csharp": {
+    "foreground": "$string",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentCDataSection:csharp": {
+    "foreground": "$string",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentComment:csharp": {
+    "foreground": "$comment",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentDelimiter:csharp": {
+    "foreground": "$operator",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentEntityReference:csharp": {
+    "foreground": "$keyword",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentProcessingInstruction:csharp": {
+    "foreground": "$operator",
+    "bold": false,
+    "italic": false
+  },
+  "xmlDocCommentText:csharp": {
+    "foreground": "$comment",
+    "bold": false,
+    "italic": false
+  },
   "operator": {
     "foreground": "$operator",
     "bold": false,

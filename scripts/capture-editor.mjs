@@ -10,7 +10,20 @@ const invoke = (...args) => {
   if (output.includes('### Error')) throw new Error(output);
   return output;
 };
-const scenes = process.env.CAPTURE_SCENES?.split(',') ?? ['diff', 'merge', 'inline-merge', 'selection', 'inactive-selection', 'unused', 'unused-selected', 'unused-roles', 'unused-roles-selected', 'unused-roles-inactive', 'hover', 'debugger', 'inlay', 'quickpick', 'graph', 'terminal'];
+const scenes = process.env.CAPTURE_SCENES?.split(',') ?? ['diff', 'merge', 'inline-merge', 'selection', 'inactive-selection', 'unused', 'unused-selected', 'unused-roles', 'unused-roles-selected', 'unused-roles-inactive', 'hover', 'debugger', 'inlay', 'quickpick', 'graph', 'terminal', 'xml-docs', 'syntax'];
+const xmlDocs = JSON.parse(await readFile('validation/xml-doc-cases.json', 'utf8'));
+const palettes = JSON.parse(await readFile('palette.json', 'utf8'));
+const syntaxCases = [
+  { line: 'export interface', text: 'interface', role: 'keyword' },
+  { line: 'export interface', text: 'ScanResult', role: 'type' },
+  { line: 'readonly prefix', text: 'prefix', role: 'property' },
+  { line: 'readonly prefix', text: "'snapshot'", role: 'string' },
+  { line: 'read(path:', text: 'read', role: 'function' },
+  { line: 'read(path:', text: 'path', role: 'parameter' },
+  { line: 'read(path:', text: '128', role: 'number' },
+  { line: 'const label', text: 'label', role: 'fg' },
+  { line: '// Neutral prose', text: 'Neutral prose;', role: 'comment' }
+];
 // Match this macOS Retina host. A DPR mismatch shrinks xterm's canvas glyphs.
 invoke('run-code', `async (page) => {
   const cdp = await page.context().newCDPSession(page);
@@ -24,6 +37,7 @@ for (const variant of process.argv.slice(2).length ? process.argv.slice(2) : ['n
     let snapshotPath = snapshot.match(/\]\((\.playwright-cli\/[^)]+)\)/)?.[1];
     if (!snapshotPath) throw new Error('Missing fresh accessibility snapshot');
     let tree = await readFile(snapshotPath, 'utf8');
+    if (/dialog "Welcome to Visual Studio Code"/.test(tree)) throw new Error('Dismiss onboarding in the isolated profile before capturing');
     const maximize = scene === 'terminal' && tree.match(/button "Maximize Panel[^\n]*\[ref=(e\d+)\]/)?.[1];
     if (maximize) {
       invoke('click', maximize);
@@ -42,6 +56,8 @@ for (const variant of process.argv.slice(2).length ? process.argv.slice(2) : ['n
       'unused-roles': /review-unused.ts/,
       'unused-roles-selected': /review-unused.ts/,
       'unused-roles-inactive': /review-unused.ts/,
+      'xml-docs': /XmlDocumentation.cs/,
+      syntax: /review-syntax.ts/,
       hover: /base.ts/,
       debugger: /Paused on debugger statement/,
       inlay: /review-states.ts/,
@@ -66,6 +82,7 @@ for (const variant of process.argv.slice(2).length ? process.argv.slice(2) : ['n
         const visible = selector => [...document.querySelectorAll(selector)].filter(el => el.getBoundingClientRect().width > 0);
         return {
           editorBackground: getComputedStyle(workbench).getPropertyValue('--vscode-editor-background').trim(),
+          tokenLines: ${scene === 'xml-docs' || scene === 'syntax'} ? visible('.view-line').map(line => [...line.querySelectorAll('span')].filter(span => !span.children.length).map(span => ({ text: span.textContent.replace(/\\u00a0/g, ' '), color: getComputedStyle(span).color }))) : [],
           selection: visible('.selected-text').length,
           selectionColors: visible('.selected-text').map(el => getComputedStyle(el).backgroundColor),
           selectedForegrounds: visible('.inline-selected-text').map(el => getComputedStyle(el).color),
@@ -100,6 +117,25 @@ for (const variant of process.argv.slice(2).length ? process.argv.slice(2) : ['n
         return expected.slice(0, 3).every((value, i) => value === actual[i]) && Math.abs((actual[3] ?? 1) - (expected[3] ?? 255) / 255) < 0.011;
       };
       ${scene === 'selection' ? "if (!result.selection || !result.diagnostic) throw new Error('Selection and diagnostic must both be rendered');" : ''}
+      ${scene === 'xml-docs' || scene === 'syntax' ? `
+        const cases = ${JSON.stringify(scene === 'xml-docs' ? xmlDocs.cases : syntaxCases)};
+        const palette = ${JSON.stringify(palettes[variant])};
+        result.tokenColorChecks = 0;
+        for (const item of cases) {
+          const spans = result.tokenLines.find(line => line.map(span => span.text).join('').includes(item.line));
+          if (!spans) throw new Error('Missing rendered fixture line: ' + item.line);
+          const text = spans.map(span => span.text).join('');
+          const start = text.indexOf(item.text);
+          if (start < 0) throw new Error('Missing rendered fixture token: ' + item.text);
+          let offset = 0;
+          for (const span of spans) {
+            const end = offset + span.text.length;
+            if (offset < start + item.text.length && end > start && !matchesColor(span.color, palette[item.role])) throw new Error('Wrong rendered token color: ' + JSON.stringify({item, span}));
+            offset = end;
+          }
+          result.tokenColorChecks++;
+        }
+      ` : ''}
       ${scene === 'inlay' ? "if (!result.inlayHints.length) throw new Error('Native inlay hints must be rendered');" : ''}
       ${scene === 'terminal' ? "if (!/diff.*--git/.test(result.terminalText) || !result.terminalText.includes('worker.service')) throw new Error('Both ls and git diff output must be visible');" : ''}
       ${scene === 'unused' || scene === 'unused-selected' ? `
@@ -149,6 +185,7 @@ for (const variant of process.argv.slice(2).length ? process.argv.slice(2) : ['n
     }`);
     invoke('screenshot', '--filename', `output/playwright/${variant}-${scene}.png`);
     const metadata = JSON.parse(await readFile(`output/playwright/${variant}-${scene}.json`, 'utf8'));
+    if (scene === 'syntax' && !(metadata.semanticTokenCount > 0)) throw new Error('Syntax scene requires native semantic tokens');
     if (metadata.themeHash !== createHash('sha256').update(JSON.stringify(theme)).digest('hex')) throw new Error('Theme changed during capture');
     await writeFile(`output/playwright/${variant}-${scene}.evidence.txt`, snapshot + '\n' + evidence);
     console.log(`Captured and asserted ${variant} ${scene}`);

@@ -1031,10 +1031,83 @@
       }
     },
     {
-      "name": "XML doc tags",
+      "name": "XML documentation prose",
       "scope": [
-        "comment entity.name.tag",
-        "comment entity.other.attribute-name"
+        "comment.documentation.cs"
+      ],
+      "settings": {
+        "foreground": "#CAD6DF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "XML documentation tags",
+      "scope": [
+        "comment.block.documentation.cs entity.name.tag",
+        "comment.documentation.name.cs"
+      ],
+      "settings": {
+        "foreground": "#93F5E4",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "XML documentation attributes",
+      "scope": [
+        "comment.block.documentation.cs entity.other.attribute-name",
+        "comment.documentation.attribute.name.cs"
+      ],
+      "settings": {
+        "foreground": "#F3F7FA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "XML documentation values and quotes",
+      "scope": [
+        "comment.block.documentation.cs string",
+        "comment.block.documentation.cs punctuation.definition.string",
+        "comment.documentation.attribute.value.cs",
+        "comment.documentation.attribute.quotes.cs",
+        "comment.documentation.cdata.cs"
+      ],
+      "settings": {
+        "foreground": "#D4EDAF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "XML documentation delimiters",
+      "scope": [
+        "comment.block.documentation.cs punctuation.definition.comment",
+        "comment.block.documentation.cs punctuation.definition.tag",
+        "comment.block.documentation.cs punctuation.separator",
+        "comment.documentation.delimiter.cs",
+        "comment.documentation.processingInstruction.cs"
+      ],
+      "settings": {
+        "foreground": "#D6E4EE",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "XML documentation entities",
+      "scope": [
+        "comment.block.documentation.cs constant.character.entity",
+        "comment.block.documentation.cs constant.character.entity punctuation",
+        "comment.documentation.entityReference.cs"
+      ],
+      "settings": {
+        "foreground": "#DDC5FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Comments inside XML documentation",
+      "scope": [
+        "comment.block.documentation.cs comment.block.cs",
+        "comment.block.documentation.cs comment.block.cs punctuation.definition.comment.cs",
+        "comment.documentation.comment.cs"
       ],
       "settings": {
         "foreground": "#CAD6DF",
@@ -1164,6 +1237,56 @@
       "italic": false
     },
     "comment": {
+      "foreground": "#CAD6DF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentName:csharp": {
+      "foreground": "#93F5E4",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentAttributeName:csharp": {
+      "foreground": "#F3F7FA",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentAttributeQuotes:csharp": {
+      "foreground": "#D4EDAF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentAttributeValue:csharp": {
+      "foreground": "#D4EDAF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentCDataSection:csharp": {
+      "foreground": "#D4EDAF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentComment:csharp": {
+      "foreground": "#CAD6DF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentDelimiter:csharp": {
+      "foreground": "#D6E4EE",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentEntityReference:csharp": {
+      "foreground": "#DDC5FF",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentProcessingInstruction:csharp": {
+      "foreground": "#D6E4EE",
+      "bold": false,
+      "italic": false
+    },
+    "xmlDocCommentText:csharp": {
       "foreground": "#CAD6DF",
       "bold": false,
       "italic": false

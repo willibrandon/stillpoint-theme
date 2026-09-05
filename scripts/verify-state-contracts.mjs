@@ -39,7 +39,11 @@ for (const variant of ['night', 'day', 'contrast']) {
       changed.tokenColors.find(rule => [rule.scope].flat().includes('comment')).settings.foreground = colors['editor.selectionBackground'];
     }, /unused .* on editor.selectionBackground/);
     if (variant === 'day') for (const [role, previous] of [['parameter', '#374453'], ['property', '#293D4B']]) {
-      rejects(`previous Day ${role}`, (colors, changed) => { changed.semanticTokenColors[role].foreground = previous; }, new RegExp(`selected unused ${role} on editor.selectionBackground`));
+      rejects(`previous Day ${role}`, (colors, changed) => {
+        // Reproduce the original failing pair; the revised Day surface is lighter.
+        colors['editor.selectionBackground'] = '#BFCBCD';
+        changed.semanticTokenColors[role].foreground = previous;
+      }, new RegExp(`selected unused ${role} on editor.selectionBackground`));
     }
   }
   // Never reintroduce a selection requirement for gutter or ghost foregrounds.

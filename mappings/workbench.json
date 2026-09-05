@@ -117,16 +117,21 @@
     {
       "value": "$property",
       "keys": [
-        "activityBar.foreground",
         "debugTokenExpression.name",
-        "icon.foreground",
-        "profileBadge.foreground",
         "symbolIcon.eventForeground",
         "symbolIcon.fieldForeground",
         "symbolIcon.keyForeground",
         "symbolIcon.keywordForeground",
         "symbolIcon.namespaceForeground",
-        "symbolIcon.propertyForeground",
+        "symbolIcon.propertyForeground"
+      ]
+    },
+    {
+      "value": "$chrome",
+      "keys": [
+        "activityBar.foreground",
+        "icon.foreground",
+        "profileBadge.foreground",
         "terminal.ansiWhite"
       ]
     },

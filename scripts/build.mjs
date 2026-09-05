@@ -64,6 +64,8 @@ for (const [variant, palette] of Object.entries(palettes)) {
 const previewFile = new URL('preview.html', root);
 const preview = await readFile(previewFile, 'utf8');
 const previewTag = `<script id="states" type="application/json">${JSON.stringify(previewStates)}</script>`;
-const updated = preview.replace(/<script id="states" type="application\/json">.*?<\/script>/, previewTag);
-if (checking && preview !== updated) throw new Error('Preview state colors are stale');
+const paletteTag = `<script id="palettes" type="application/json">${JSON.stringify(palettes)}</script>`;
+const updated = preview.replace(/<script id="states" type="application\/json">.*?<\/script>/, previewTag)
+  .replace(/<script id="palettes" type="application\/json">.*?<\/script>/, paletteTag);
+if (checking && preview !== updated) throw new Error('Preview palette or state colors are stale');
 if (!checking) await writeFile(previewFile, updated);
