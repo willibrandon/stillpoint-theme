@@ -1,0 +1,9 @@
+tools.example.test {
+    @api path /api/*
+    handle @api {
+        reverse_proxy localhost:8080
+    }
+    root * /srv/tools
+    file_server
+    header X-Request-ID {http.request.uuid}
+}

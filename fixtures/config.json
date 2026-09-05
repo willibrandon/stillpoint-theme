@@ -1,0 +1,8 @@
+{
+  "name": "stillpoint",
+  "enabled": true,
+  "limits": { "maxFiles": 128, "timeoutMs": 2500 },
+  "paths": ["src", "tests"],
+  "message": "Readable selections and clear diagnostics",
+  "optional": null
+}

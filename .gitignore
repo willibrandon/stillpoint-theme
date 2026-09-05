@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vscode-test/
+.vscode-test-web/
+.playwright-cli/
+output/
+DESIGN.md
+research/

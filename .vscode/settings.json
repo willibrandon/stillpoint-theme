@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/.vscode-test-web": true,
+    "**/.vscode-test": true
+  }
+}

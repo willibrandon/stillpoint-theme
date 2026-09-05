@@ -1,0 +1,52 @@
+{
+  "name": "stillpoint-theme",
+  "displayName": "Stillpoint",
+  "description": "Calm surfaces, precise semantic color. Night, Day, and Contrast themes for code, terminals, and review.",
+  "version": "0.1.0",
+  "publisher": "willibrandon",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.136.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "high contrast",
+    "semantic highlighting"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && node verify-palette.mjs && node scripts/verify.mjs",
+    "package": "npm run check && vsce package --no-dependencies --allow-missing-repository --out dist/stillpoint-theme-0.1.0.vsix"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Stillpoint Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stillpoint-night.json"
+      },
+      {
+        "label": "Stillpoint Day",
+        "uiTheme": "vs",
+        "path": "./themes/stillpoint-day.json"
+      },
+      {
+        "label": "Stillpoint Contrast",
+        "uiTheme": "hc-black",
+        "path": "./themes/stillpoint-contrast.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/test-web": "0.0.81",
+    "@vscode/vsce": "3.9.2",
+    "typescript": "5.9.3",
+    "vscode-oniguruma": "2.0.1",
+    "vscode-textmate": "9.3.2"
+  }
+}

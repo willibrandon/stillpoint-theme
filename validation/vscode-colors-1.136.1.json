@@ -1,0 +1,4942 @@
+{
+  "version": "1.136.1",
+  "commit": "a44adf7f53e00964ab890f9f8758a334f1fc15bc",
+  "source": "https://github.com/microsoft/vscode/tree/1.136.1",
+  "colors": {
+    "actionBar.toggledBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/actionWidget/browser/actionWidget.ts"
+    },
+    "activeSessionView.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "activeSessionView.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "activityBar.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.activeFocusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.dropBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBar.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.dropBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityBarTop.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "activityErrorBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "activityErrorBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "activityWarningBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "activityWarningBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "agentFeedbackEditorWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentFeedbackEditorWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentFeedbackInputWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agents.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsBottomPanel.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsCard.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsChatInput.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsChatInput.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsChatInput.focusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsChatInput.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsChatInput.placeholderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentSessionReadIndicator.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/browser/agentSessions/agentSessions.ts"
+    },
+    "agentSessionSelectedBadge.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/browser/agentSessions/agentSessions.ts"
+    },
+    "agentSessionSelectedUnfocusedBadge.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/browser/agentSessions/agentSessions.ts"
+    },
+    "agentsGradient.tintColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsMobileDiff.addedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/browser/parts/mobile/contributions/mobileDiffColors.ts"
+    },
+    "agentsMobileDiff.deletedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/browser/parts/mobile/contributions/mobileDiffColors.ts"
+    },
+    "agentsMobileDiff.modifiedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/browser/parts/mobile/contributions/mobileDiffColors.ts"
+    },
+    "agentsNewSessionButton.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsNewSessionButton.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsNewSessionButton.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsNewSessionButton.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsPanel.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsPanel.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsPanel.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentStatusIndicator.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "agentsUnreadBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsUnreadBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsUpdateButton.downloadedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsUpdateButton.downloadingBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "agentsVoice.speakingBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/agentsVoice/common/agentsVoiceColors.ts"
+    },
+    "agentsVoice.speakingForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/agentsVoice/common/agentsVoiceColors.ts"
+    },
+    "badge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "badge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "banner.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "banner.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "banner.iconForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "breadcrumb.activeSelectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "breadcrumb.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "breadcrumb.focusForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "breadcrumb.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "breadcrumbPicker.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "browser.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "button.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.secondaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.secondaryBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.secondaryForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.secondaryHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "button.separator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "chart.axis": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "chart.guide": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "chart.line": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "charts.blue": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.green": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.lines": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.orange": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.purple": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.red": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "charts.yellow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/chartsColors.ts"
+    },
+    "chat.avatarBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.avatarForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.checkpointSeparator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.dictationActiveMicGlow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.editedFileForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.findMatchBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.findMatchHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.inputWorkingBorderColor1": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.inputWorkingBorderColor2": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.inputWorkingBorderColor3": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.linesAddedForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.linesRemovedForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.requestBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.requestBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.requestBubbleBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.requestBubbleHoverBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.requestCodeBorder": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.slashCommandBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.slashCommandForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.thinkingShimmer": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.voiceGlowBaseColor": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.voiceListeningGlow": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "chat.voiceSpeakingGlow": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/common/widget/chatColors.ts"
+    },
+    "checkbox.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.disabled.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.disabled.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.selectBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "checkbox.selectBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "commandCenter.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.debuggingBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/statusbarColorProvider.ts"
+    },
+    "commandCenter.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.inactiveBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commandCenter.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "commentsView.resolvedIcon": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "commentsView.unresolvedIcon": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "contrastActiveBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "contrastBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "debugConsole.errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugConsole.infoForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugConsole.sourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugConsole.warningForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugConsoleInputIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugExceptionWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/exceptionWidget.ts"
+    },
+    "debugExceptionWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/exceptionWidget.ts"
+    },
+    "debugIcon.breakpointCurrentStackframeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/breakpointEditorContribution.ts"
+    },
+    "debugIcon.breakpointDisabledForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/breakpointEditorContribution.ts"
+    },
+    "debugIcon.breakpointForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/breakpointEditorContribution.ts"
+    },
+    "debugIcon.breakpointStackframeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/breakpointEditorContribution.ts"
+    },
+    "debugIcon.breakpointUnverifiedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/breakpointEditorContribution.ts"
+    },
+    "debugIcon.continueForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.disconnectForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.pauseForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.restartForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.startForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.stepBackForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.stepIntoForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.stepOutForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.stepOverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugIcon.stopForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.boolean": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.error": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.name": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.number": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.string": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.type": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugTokenExpression.value": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugToolBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugToolBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugView.exceptionLabelBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugView.exceptionLabelForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugView.stateLabelBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugView.stateLabelForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "debugView.valueChangedHighlight": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugColors.ts"
+    },
+    "descriptionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "diffEditor.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.diagonalFill": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.insertedLineBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.insertedTextBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.insertedTextBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.move.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/diffEditor/registrations.contribution.ts"
+    },
+    "diffEditor.moveActive.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/diffEditor/registrations.contribution.ts"
+    },
+    "diffEditor.removedLineBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.removedTextBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.removedTextBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.unchangedCodeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.unchangedRegionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.unchangedRegionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditor.unchangedRegionShadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/diffEditor/registrations.contribution.ts"
+    },
+    "diffEditorGutter.insertedLineBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditorGutter.removedLineBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditorOverview.insertedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "diffEditorOverview.removedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "disabledForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "dropdown.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "dropdown.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "dropdown.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "dropdown.listBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "editor.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editor.compositionBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findMatchHighlightForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findRangeHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.findRangeHighlightBorder": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.focusedStackFrameHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/callStackEditorContribution.ts"
+    },
+    "editor.foldBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/folding/browser/foldingDecorations.ts"
+    },
+    "editor.foldPlaceholderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/folding/browser/foldingDecorations.ts"
+    },
+    "editor.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.hoverHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.inactiveLineHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.inactiveSelectionBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.inlineValuesBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugEditorContribution.ts"
+    },
+    "editor.inlineValuesForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/debugEditorContribution.ts"
+    },
+    "editor.lineHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.lineHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.linkedEditingBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/linkedEditing/browser/linkedEditing.ts"
+    },
+    "editor.placeholder.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/placeholderText/browser/placeholderText.contribution.ts"
+    },
+    "editor.rangeHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.rangeHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.selectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.selectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.selectionHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.selectionHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.snippetFinalTabstopHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.snippetFinalTabstopHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.snippetTabstopHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.snippetTabstopHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editor.stackFrameHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/callStackEditorContribution.ts"
+    },
+    "editor.symbolHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.symbolHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editor.wordHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editor.wordHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editor.wordHighlightStrongBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editor.wordHighlightStrongBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editor.wordHighlightTextBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editor.wordHighlightTextBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editorActionList.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "editorActionList.focusBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "editorActionList.focusForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "editorActionList.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "editorActiveLineNumber.foreground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.foreground6": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketHighlight.unexpectedBracket.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketMatch.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketMatch.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketMatch.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.activeBackground6": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorBracketPairGuide.background6": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorCodeLens.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorCommentsWidget.rangeActiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "editorCommentsWidget.rangeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "editorCommentsWidget.replyInputBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "editorCommentsWidget.resolvedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "editorCommentsWidget.unresolvedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentColors.ts"
+    },
+    "editorCursor.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorCursor.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorError.background": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorError.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorError.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorGhostText.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorGhostText.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorGhostText.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorGroup.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.dropBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.dropIntoPromptBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.dropIntoPromptBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.dropIntoPromptForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.emptyBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroup.focusedEmptyBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroupHeader.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroupHeader.noTabsBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroupHeader.tabsBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGroupHeader.tabsBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorGutter.addedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.addedSecondaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorGutter.commentDraftGlyphForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorGutter.commentGlyphForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorGutter.commentRangeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorGutter.commentUnresolvedGlyphForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorGutter.deletedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.deletedSecondaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.foldingControlForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/folding/browser/foldingDecorations.ts"
+    },
+    "editorGutter.itemBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.itemGlyphForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.modifiedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorGutter.modifiedSecondaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorHint.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorHint.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorHoverWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorHoverWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorHoverWidget.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorHoverWidget.highlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/parameterHints/browser/parameterHintsWidget.ts"
+    },
+    "editorHoverWidget.statusBarBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorIndentGuide.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground\\": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground1\\": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.activeBackground6": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background\\": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background1\\": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorIndentGuide.background6": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorInfo.background": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInfo.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInfo.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.parameterBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.parameterForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.typeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorInlayHint.typeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorLightBulb.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorLightBulbAi.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorLightBulbAutoFix.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorLineNumber.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorLineNumber.dimmedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorLineNumber.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorLink.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorMarkerNavigation.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationError.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationError.headerBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationInfo.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationInfo.headerBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationWarning.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMarkerNavigationWarning.headerBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/gotoError/browser/gotoErrorWidget.ts"
+    },
+    "editorMinimap.inlineChatInserted": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "editorMultiCursor.primary.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorMultiCursor.primary.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorMultiCursor.secondary.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorMultiCursor.secondary.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.addedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorOverviewRuler.agentFeedbackForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/contrib/agentFeedback/browser/agentFeedbackOverviewRulerContribution.ts"
+    },
+    "editorOverviewRuler.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.bracketMatchForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/bracketMatching/browser/bracketMatching.ts"
+    },
+    "editorOverviewRuler.commentDraftForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorOverviewRuler.commentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorOverviewRuler.commentUnresolvedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/comments/browser/commentGlyphWidget.ts"
+    },
+    "editorOverviewRuler.commonContentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorOverviewRuler.currentContentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorOverviewRuler.deletedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorOverviewRuler.errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.findMatchForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorOverviewRuler.incomingContentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorOverviewRuler.infoForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.inlineChatInserted": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "editorOverviewRuler.inlineChatRemoved": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "editorOverviewRuler.modifiedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "editorOverviewRuler.rangeHighlightForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.selectionHighlightForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorOverviewRuler.warningForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorOverviewRuler.wordHighlightForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editorOverviewRuler.wordHighlightStrongForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editorOverviewRuler.wordHighlightTextForeground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/wordHighlighter/browser/highlightDecorations.ts"
+    },
+    "editorPane.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "editorRuler.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorStickyScroll.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorStickyScroll.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorStickyScrollGutter.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorStickyScrollHover.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorSuggestWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.focusHighlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.focusOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.highlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.selectedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.selectedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidget.selectedIconForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorSuggestWidgetStatus.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/suggest/browser/suggestWidget.ts"
+    },
+    "editorUnicodeHighlight.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorUnicodeHighlight.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorUnnecessaryCode.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorUnnecessaryCode.opacity": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorWarning.background": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWarning.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWarning.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWhitespace.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/common/core/editorColorRegistry.ts"
+    },
+    "editorWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWidget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWidget.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "editorWidget.resizeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "extensionBadge.remoteBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "extensionBadge.remoteForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "extensionButton.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.prominentBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.prominentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.prominentHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionButton.separator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsActions.ts"
+    },
+    "extensionIcon.preReleaseForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsWidgets.ts"
+    },
+    "extensionIcon.privateForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsWidgets.ts"
+    },
+    "extensionIcon.sponsorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsWidgets.ts"
+    },
+    "extensionIcon.starForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/extensions/browser/extensionsWidgets.ts"
+    },
+    "extensionIcon.verifiedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/services/extensionManagement/common/extensionsIcons.ts"
+    },
+    "focusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "git.blame.editorDecorationForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.addedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.conflictingResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.deletedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.ignoredResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.modifiedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.renamedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.stageDeletedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.stageModifiedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.submoduleResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "gitDecoration.untrackedResourceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "extensions/git/package.json"
+    },
+    "icon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "inactiveSessionView.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "inactiveSessionView.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/sessions/common/theme.ts"
+    },
+    "inlineChat.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChat.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChat.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChat.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatDiff.inserted": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatDiff.removed": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatInput.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatInput.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatInput.focusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineChatInput.placeholderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/inlineChat/common/inlineChat.ts"
+    },
+    "inlineEdit.gutterIndicator.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.primaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.primaryBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.primaryForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.secondaryBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.secondaryBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.secondaryForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.successfulBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.successfulBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.gutterIndicator.successfulForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.modifiedBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.modifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.modifiedChangedLineBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.modifiedChangedTextBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.originalBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.originalBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.originalChangedLineBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.originalChangedTextBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.tabWillAcceptModifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "inlineEdit.tabWillAcceptOriginalBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/theme.ts"
+    },
+    "input.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "input.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "input.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "input.placeholderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputOption.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputOption.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputOption.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputOption.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.errorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.errorBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.infoBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.infoBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.infoForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.warningBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.warningBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "inputValidation.warningForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "interactive.activeCodeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/interactive/browser/interactive.contribution.ts"
+    },
+    "interactive.inactiveCodeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/interactive/browser/interactive.contribution.ts"
+    },
+    "keybindingLabel.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "keybindingLabel.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "keybindingLabel.bottomBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "keybindingLabel.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "keybindingTable.headerBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/browser/keybindingsEditor.ts"
+    },
+    "keybindingTable.rowsBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/browser/keybindingsEditor.ts"
+    },
+    "list.activeSelectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.activeSelectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.activeSelectionIconForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.deemphasizedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.dropBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.dropBetweenBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.filterMatchBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.filterMatchBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.focusAndSelectionOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.focusBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.focusForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.focusHighlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.focusOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.highlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.inactiveFocusBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.inactiveFocusOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.inactiveSelectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.inactiveSelectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.inactiveSelectionIconForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.invalidItemForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "list.warningForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "listFilterWidget.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "listFilterWidget.noMatchesOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "listFilterWidget.outline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "listFilterWidget.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "markdownAlert.caution.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/markdown/common/markdownColors.ts"
+    },
+    "markdownAlert.important.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/markdown/common/markdownColors.ts"
+    },
+    "markdownAlert.note.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/markdown/common/markdownColors.ts"
+    },
+    "markdownAlert.tip.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/markdown/common/markdownColors.ts"
+    },
+    "markdownAlert.warning.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/markdown/common/markdownColors.ts"
+    },
+    "mcpIcon.starForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mcp/browser/mcpServerWidgets.ts"
+    },
+    "menu.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.selectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.selectionBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.selectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menu.separatorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/menuColors.ts"
+    },
+    "menubar.selectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "menubar.selectionBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "menubar.selectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "merge.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.commonContentBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.commonHeaderBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.currentContentBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.currentHeaderBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.incomingContentBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "merge.incomingHeaderBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "mergeEditor.change.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.change.word.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.changeBase.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.changeBase.word.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.handled.minimapOverViewRuler": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.handledFocused.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.handledUnfocused.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.input1.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.input2.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.unhandledFocused.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflict.unhandledUnfocused.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "mergeEditor.conflictingLines.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/mergeEditor/browser/view/colors.ts"
+    },
+    "minimap.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.chatEditHighlight": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/chat/browser/chatEditing/chatEditingModifiedFileEntry.ts"
+    },
+    "minimap.errorHighlight": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.findMatchHighlight": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.foregroundOpacity": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.infoHighlight": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.selectionHighlight": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.selectionOccurrenceHighlight": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimap.warningHighlight": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimapGutter.addedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "minimapGutter.deletedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "minimapGutter.modifiedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/common/quickDiff.ts"
+    },
+    "minimapSlider.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimapSlider.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "minimapSlider.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/minimapColors.ts"
+    },
+    "modernActivityBar.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBar.inactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBarItem.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBarItem.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBarItem.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernActivityBarItem.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.activeActionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.activeHoverActionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.activeHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.hoverActionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.inactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernEditorTab.selectedActionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernTab.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernTab.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernTab.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "modernTab.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "multiDiffEditor.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/multiDiffEditor/colors.ts"
+    },
+    "multiDiffEditor.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/multiDiffEditor/colors.ts"
+    },
+    "multiDiffEditor.headerBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/browser/widget/multiDiffEditor/colors.ts"
+    },
+    "notebook.cellBorderColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.cellEditorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.cellHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.cellInsertionIndicator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.cellStatusBarItemHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.cellToolbarSeparator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.editorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.focusedCellBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.focusedCellBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.focusedEditorBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.inactiveFocusedCellBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.inactiveSelectedCellBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.outputContainerBackgroundColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.outputContainerBorderColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.selectedCellBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.selectedCellBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebook.symbolHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookEditorOverviewRuler.runningCellForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookScrollbarSlider.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookScrollbarSlider.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookScrollbarSlider.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookStatusErrorIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookStatusRunningIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notebookStatusSuccessIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/notebook/browser/notebookEditorWidget.ts"
+    },
+    "notificationCenter.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationCenterHeader.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationCenterHeader.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationLink.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notifications.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notifications.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notifications.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationsErrorIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationsInfoIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationsWarningIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "notificationToast.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "outputView.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "outputViewStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panel.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panel.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panel.dropBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelInput.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelSection.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelSection.dropBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelSectionHeader.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelSectionHeader.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelSectionHeader.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelStickyScroll.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelStickyScroll.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitle.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitle.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitle.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitle.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitleBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "panelTitleBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "peekView.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditor.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditor.matchHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditor.matchHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditorGutter.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditorStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewEditorStickyScrollGutter.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.fileForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.lineForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.matchHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.selectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewResult.selectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewTitle.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewTitleDescription.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "peekViewTitleLabel.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/peekView/browser/peekView.ts"
+    },
+    "pickerGroup.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "pickerGroup.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "ports.iconRunningProcessForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/remote/browser/tunnelView.ts"
+    },
+    "problemsErrorIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "problemsInfoIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "problemsWarningIcon.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "profileBadge.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "profileBadge.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "profiles.sashBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/userDataProfile/browser/userDataProfilesEditor.ts"
+    },
+    "progressBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "quickInput.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInput.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInput.list.focusBackground": {
+      "needsTransparency": false,
+      "deprecated": true,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInputList.focusBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInputList.focusForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInputList.focusHighlightForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInputList.focusIconForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "quickInputTitle.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/quickpickColors.ts"
+    },
+    "radio.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.inactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.inactiveBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "radio.inactiveHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/inputColors.ts"
+    },
+    "sash.hoverBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "scmGraph.foreground1": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.foreground2": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.foreground3": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.foreground4": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.foreground5": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemBaseRefColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemHoverAdditionsForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemHoverDefaultLabelBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemHoverDefaultLabelForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemHoverDeletionsForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemHoverLabelForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemRefColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scmGraph.historyItemRemoteRefColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/scm/browser/scmHistory.ts"
+    },
+    "scrollbar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "scrollbar.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "scrollbarSlider.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "scrollbarSlider.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "scrollbarSlider.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/miscColors.ts"
+    },
+    "search.resultsInfoForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/searchColors.ts"
+    },
+    "searchEditor.findMatchBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/searchColors.ts"
+    },
+    "searchEditor.findMatchBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/searchColors.ts"
+    },
+    "searchEditor.textInputBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/searchEditor/browser/searchEditor.ts"
+    },
+    "selection.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "settings.checkboxBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.checkboxBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.checkboxForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.dropdownBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.dropdownBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.dropdownForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.dropdownListBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.focusedRowBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.focusedRowBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.headerBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.headerForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.modifiedItemIndicator": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.numberInputBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.numberInputBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.numberInputForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.rowHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.sashBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.settingsHeaderHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.textInputBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.textInputBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "settings.textInputForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/preferences/common/settingsEditorColorRegistry.ts"
+    },
+    "sideBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBar.dropBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBar.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarActivityBarTop.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarSectionHeader.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarSectionHeader.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarSectionHeader.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarStickyScroll.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarStickyScroll.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarTitle.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarTitle.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBarTitle.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBySideEditor.horizontalBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "sideBySideEditor.verticalBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "simpleFindWidget.sashBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget.ts"
+    },
+    "statusBar.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.debuggingBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/statusbarColorProvider.ts"
+    },
+    "statusBar.debuggingBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/statusbarColorProvider.ts"
+    },
+    "statusBar.debuggingForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/debug/browser/statusbarColorProvider.ts"
+    },
+    "statusBar.focusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.noFolderBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.noFolderBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBar.noFolderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.compactHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.errorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.errorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.errorHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.errorHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.focusBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.offlineBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.offlineForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.offlineHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.offlineHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.prominentBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.prominentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.prominentHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.prominentHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.remoteBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.remoteForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.remoteHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.remoteHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.warningBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.warningForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.warningHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "statusBarItem.warningHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "strongForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "surface.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "surface.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "surface.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "symbolIcon.arrayForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.booleanForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.classForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.colorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.constantForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.constructorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.enumeratorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.enumeratorMemberForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.eventForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.fieldForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.fileForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.folderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.functionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.interfaceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.keyForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.keywordForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.methodForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.moduleForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.namespaceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.nullForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.numberForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.objectForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.operatorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.packageForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.propertyForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.referenceForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.snippetForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.stringForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.structForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.textForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.typeParameterForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.unitForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "symbolIcon.variableForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/editor/contrib/symbolIcons/browser/symbolIcons.ts"
+    },
+    "tab.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.activeBorderTop": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.activeModifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.dragAndDropBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.hoverBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.hoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.inactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.inactiveModifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.lastPinnedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.selectedBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.selectedBorderTop": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.selectedForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedActiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedActiveBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedActiveBorderTop": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedActiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedActiveModifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedHoverBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedHoverForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedInactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedInactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "tab.unfocusedInactiveModifiedBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "terminal.ansiBlack": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBlue": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightBlack": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightBlue": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightCyan": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightGreen": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightMagenta": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightRed": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightWhite": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiBrightYellow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiColor": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiCyan": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiGreen": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiMagenta": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiRed": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiWhite": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.ansiYellow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.dropBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.findMatchBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.findMatchBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.findMatchHighlightBackground": {
+      "needsTransparency": true,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.findMatchHighlightBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.hoverHighlightBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.inactiveSelectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.initialHintForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.selectionBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.selectionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminal.tab.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalCommandDecoration.defaultBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalCommandDecoration.errorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalCommandDecoration.successBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalCommandGuide.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/commandGuide/browser/terminal.commandGuide.contribution.ts"
+    },
+    "terminalCursor.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalCursor.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalOverviewRuler.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalOverviewRuler.cursorForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalOverviewRuler.findMatchForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminal/common/terminalColorRegistry.ts"
+    },
+    "terminalStickyScroll.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollColorRegistry.ts"
+    },
+    "terminalStickyScroll.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollColorRegistry.ts"
+    },
+    "terminalStickyScrollHover.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollColorRegistry.ts"
+    },
+    "terminalSymbolIcon.aliasForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.argumentForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.branchForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.commitForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.fileForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.flagForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.folderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.inlineSuggestionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.methodForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.optionForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.optionValueForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.pullRequestDoneForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.pullRequestForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.remoteForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.stashForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.symbolicLinkFileForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.symbolicLinkFolderForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.symbolText": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "terminalSymbolIcon.tagForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons.ts"
+    },
+    "testing.coverCountBadgeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.coverCountBadgeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.coveredBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.coveredBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.coveredGutterBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.coveredMinimapBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconErrored": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconErrored.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconFailed": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconFailed.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconPassed": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconPassed.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconQueued": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconQueued.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconSkipped": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconSkipped.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconUnset": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.iconUnset.retired": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.error.badgeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.error.badgeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.error.badgeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.error.lineBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.info.decorationForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.message.info.lineBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.messagePeekBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.messagePeekHeaderBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.peekBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.peekHeaderBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.runAction": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.uncoveredBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.uncoveredBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.uncoveredBranchBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.uncoveredGutterBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "testing.uncoveredMinimapBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/testing/browser/theme.ts"
+    },
+    "textBlockQuote.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textBlockQuote.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textCodeBlock.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textLink.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textLink.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textPreformat.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textPreformat.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textPreformat.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "textSeparator.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/baseColors.ts"
+    },
+    "titleBar.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "titleBar.activeForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "titleBar.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "titleBar.inactiveBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "titleBar.inactiveForeground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "toolbar.activeBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "toolbar.hoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "toolbar.hoverOutline": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "tree.inactiveIndentGuidesStroke": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "tree.indentGuidesStroke": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "tree.tableColumnsBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "tree.tableOddRowsBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/listColors.ts"
+    },
+    "walkThrough.embeddedEditorBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeWalkthrough/common/walkThroughUtils.ts"
+    },
+    "walkthrough.stepTitle.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.progress.background": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.progress.foreground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.tileBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.tileBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "welcomePage.tileHoverBackground": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedColors.ts"
+    },
+    "widget.border": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "widget.shadow": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/platform/theme/common/colors/editorColors.ts"
+    },
+    "window.activeBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    },
+    "window.inactiveBorder": {
+      "needsTransparency": false,
+      "deprecated": false,
+      "source": "src/vs/workbench/common/theme.ts"
+    }
+  }
+}

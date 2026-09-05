@@ -1,0 +1,10 @@
+/var/log/inspect/*.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    create 0640 inspect adm
+    postrotate
+        systemctl reload inspect.service
+    endscript
+}

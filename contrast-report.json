@@ -1,0 +1,3707 @@
+{
+  "method": "WCAG 2.x sRGB relative luminance; 8-bit alpha compositing before contrast. Unrounded ratios determine pass/fail.",
+  "limitation": "Palette and proposed overlay pairs only. This is not a VS Code render audit or a WCAG conformance certification.",
+  "checks": 411,
+  "failures": [],
+  "results": [
+    {
+      "variant": "night",
+      "label": "fg on bg",
+      "foreground": "#E6EBEF",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 14.6116,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on bg",
+      "foreground": "#AAB8C4",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 8.655,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on bg",
+      "foreground": "#C6B0F5",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 9.1288,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on bg",
+      "foreground": "#78D8CB",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.4263,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on bg",
+      "foreground": "#A4CAFF",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.4158,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on bg",
+      "foreground": "#BED99A",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 11.3433,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on bg",
+      "foreground": "#EAC08F",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.3859,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on bg",
+      "foreground": "#D6DFE8",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 13.0124,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on bg",
+      "foreground": "#C7D5E2",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 11.7301,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on bg",
+      "foreground": "#B9C6D1",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.0738,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on bg",
+      "foreground": "#FF9CA8",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 8.8306,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on bg",
+      "foreground": "#F0CB83",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 11.3383,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on bg",
+      "foreground": "#A4CAFF",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.4158,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on bg",
+      "foreground": "#98D6AD",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 10.488,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on recessed",
+      "foreground": "#E6EBEF",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 15.1779,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on recessed",
+      "foreground": "#AAB8C4",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 8.9904,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on recessed",
+      "foreground": "#C6B0F5",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 9.4826,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on recessed",
+      "foreground": "#78D8CB",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.8304,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on recessed",
+      "foreground": "#A4CAFF",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.8194,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on recessed",
+      "foreground": "#BED99A",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 11.7829,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on recessed",
+      "foreground": "#EAC08F",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.7884,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on recessed",
+      "foreground": "#D6DFE8",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 13.5166,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on recessed",
+      "foreground": "#C7D5E2",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 12.1847,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on recessed",
+      "foreground": "#B9C6D1",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.4641,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on recessed",
+      "foreground": "#FF9CA8",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 9.1728,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on recessed",
+      "foreground": "#F0CB83",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 11.7776,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on recessed",
+      "foreground": "#A4CAFF",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.8194,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on recessed",
+      "foreground": "#98D6AD",
+      "background": "#10161B",
+      "minimum": 4.5,
+      "ratio": 10.8944,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on panel",
+      "foreground": "#E6EBEF",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 13.2342,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on panel",
+      "foreground": "#AAB8C4",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 7.8391,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on panel",
+      "foreground": "#C6B0F5",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 8.2683,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on panel",
+      "foreground": "#78D8CB",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.4435,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on panel",
+      "foreground": "#A4CAFF",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.4339,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on panel",
+      "foreground": "#BED99A",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 10.274,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on panel",
+      "foreground": "#EAC08F",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.4069,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on panel",
+      "foreground": "#D6DFE8",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 11.7857,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on panel",
+      "foreground": "#C7D5E2",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 10.6244,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on panel",
+      "foreground": "#B9C6D1",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.1241,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on panel",
+      "foreground": "#FF9CA8",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 7.9982,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on panel",
+      "foreground": "#F0CB83",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 10.2694,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on panel",
+      "foreground": "#A4CAFF",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.4339,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on panel",
+      "foreground": "#98D6AD",
+      "background": "#1B232B",
+      "minimum": 4.5,
+      "ratio": 9.4993,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on raised",
+      "foreground": "#E6EBEF",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 11.5142,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on raised",
+      "foreground": "#AAB8C4",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 6.8203,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on raised",
+      "foreground": "#C6B0F5",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 7.1937,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on raised",
+      "foreground": "#78D8CB",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.2161,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on raised",
+      "foreground": "#A4CAFF",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.2078,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on raised",
+      "foreground": "#BED99A",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.9387,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on raised",
+      "foreground": "#EAC08F",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.1843,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on raised",
+      "foreground": "#D6DFE8",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 10.254,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on raised",
+      "foreground": "#C7D5E2",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 9.2435,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on raised",
+      "foreground": "#B9C6D1",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 7.9383,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on raised",
+      "foreground": "#FF9CA8",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 6.9587,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on raised",
+      "foreground": "#F0CB83",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.9347,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on raised",
+      "foreground": "#A4CAFF",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.2078,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on raised",
+      "foreground": "#98D6AD",
+      "background": "#232E38",
+      "minimum": 4.5,
+      "ratio": 8.2647,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on selection",
+      "foreground": "#E6EBEF",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 9.3644,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on selection",
+      "foreground": "#AAB8C4",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 5.5469,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on selection",
+      "foreground": "#C6B0F5",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 5.8505,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on selection",
+      "foreground": "#78D8CB",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.6821,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on selection",
+      "foreground": "#A4CAFF",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.6754,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on selection",
+      "foreground": "#BED99A",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 7.2698,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on selection",
+      "foreground": "#EAC08F",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.6562,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on selection",
+      "foreground": "#D6DFE8",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 8.3395,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on selection",
+      "foreground": "#C7D5E2",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 7.5177,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on selection",
+      "foreground": "#B9C6D1",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.4562,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on selection",
+      "foreground": "#FF9CA8",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 5.6595,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on selection",
+      "foreground": "#F0CB83",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 7.2666,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on selection",
+      "foreground": "#A4CAFF",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.6754,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on selection",
+      "foreground": "#98D6AD",
+      "background": "#2C3D48",
+      "minimum": 4.5,
+      "ratio": 6.7216,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on successLine",
+      "foreground": "#E6EBEF",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 12.8894,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on successLine",
+      "foreground": "#AAB8C4",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 7.6349,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on successLine",
+      "foreground": "#C6B0F5",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 8.0528,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on successLine",
+      "foreground": "#78D8CB",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 9.1974,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on successLine",
+      "foreground": "#A4CAFF",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 9.1881,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on successLine",
+      "foreground": "#BED99A",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 10.0063,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on successLine",
+      "foreground": "#EAC08F",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 9.1618,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on successLine",
+      "foreground": "#D6DFE8",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 11.4787,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on successLine",
+      "foreground": "#C7D5E2",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 10.3475,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on successLine",
+      "foreground": "#B9C6D1",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 8.8864,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on successLine",
+      "foreground": "#FF9CA8",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 7.7898,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on successLine",
+      "foreground": "#F0CB83",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 10.0019,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on successLine",
+      "foreground": "#A4CAFF",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 9.1881,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on successLine",
+      "foreground": "#98D6AD",
+      "background": "#1c2628",
+      "minimum": 4.5,
+      "ratio": 9.2518,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on successWord",
+      "foreground": "#E6EBEF",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 10.3633,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on successWord",
+      "foreground": "#AAB8C4",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 6.1385,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on successWord",
+      "foreground": "#C6B0F5",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 6.4746,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on successWord",
+      "foreground": "#78D8CB",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.3949,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on successWord",
+      "foreground": "#A4CAFF",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.3874,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on successWord",
+      "foreground": "#BED99A",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 8.0452,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on successWord",
+      "foreground": "#EAC08F",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.3662,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on successWord",
+      "foreground": "#D6DFE8",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 9.229,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on successWord",
+      "foreground": "#C7D5E2",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 8.3196,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on successWord",
+      "foreground": "#B9C6D1",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.1448,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on successWord",
+      "foreground": "#FF9CA8",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 6.2631,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on successWord",
+      "foreground": "#F0CB83",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 8.0417,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on successWord",
+      "foreground": "#A4CAFF",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.3874,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on successWord",
+      "foreground": "#98D6AD",
+      "background": "#283735",
+      "minimum": 4.5,
+      "ratio": 7.4386,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on errorLine",
+      "foreground": "#E6EBEF",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 13.1446,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on errorLine",
+      "foreground": "#AAB8C4",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 7.786,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on errorLine",
+      "foreground": "#C6B0F5",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 8.2122,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on errorLine",
+      "foreground": "#78D8CB",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.3795,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on errorLine",
+      "foreground": "#A4CAFF",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.37,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on errorLine",
+      "foreground": "#BED99A",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 10.2044,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on errorLine",
+      "foreground": "#EAC08F",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.3432,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on errorLine",
+      "foreground": "#D6DFE8",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 11.7059,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on errorLine",
+      "foreground": "#C7D5E2",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 10.5524,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on errorLine",
+      "foreground": "#B9C6D1",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.0623,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on errorLine",
+      "foreground": "#FF9CA8",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 7.944,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on errorLine",
+      "foreground": "#F0CB83",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 10.1999,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on errorLine",
+      "foreground": "#A4CAFF",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.37,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on errorLine",
+      "foreground": "#98D6AD",
+      "background": "#232228",
+      "minimum": 4.5,
+      "ratio": 9.435,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "fg on errorWord",
+      "foreground": "#E6EBEF",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 10.9814,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "muted on errorWord",
+      "foreground": "#AAB8C4",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 6.5047,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "keyword on errorWord",
+      "foreground": "#C6B0F5",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 6.8607,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "type on errorWord",
+      "foreground": "#78D8CB",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.8359,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "function on errorWord",
+      "foreground": "#A4CAFF",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.828,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "string on errorWord",
+      "foreground": "#BED99A",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 8.5251,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "number on errorWord",
+      "foreground": "#EAC08F",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.8056,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "property on errorWord",
+      "foreground": "#D6DFE8",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 9.7794,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "parameter on errorWord",
+      "foreground": "#C7D5E2",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 8.8158,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "operator on errorWord",
+      "foreground": "#B9C6D1",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.5709,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "error on errorWord",
+      "foreground": "#FF9CA8",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 6.6367,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "warning on errorWord",
+      "foreground": "#F0CB83",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 8.5213,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "info on errorWord",
+      "foreground": "#A4CAFF",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.828,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "success on errorWord",
+      "foreground": "#98D6AD",
+      "background": "#382d34",
+      "minimum": 4.5,
+      "ratio": 7.8822,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "line numbers on editor",
+      "foreground": "#91A0AD",
+      "background": "#141A1F",
+      "minimum": 4.5,
+      "ratio": 6.5445,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "button label on accent",
+      "foreground": "#141A1F",
+      "background": "#78D8CB",
+      "minimum": 4.5,
+      "ratio": 10.4263,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "focus indicator on bg",
+      "foreground": "#78D8CB",
+      "background": "#141A1F",
+      "minimum": 3,
+      "ratio": 10.4263,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "control boundary on bg",
+      "foreground": "#798B99",
+      "background": "#141A1F",
+      "minimum": 3,
+      "ratio": 4.9829,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "focus indicator on panel",
+      "foreground": "#78D8CB",
+      "background": "#1B232B",
+      "minimum": 3,
+      "ratio": 9.4435,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "control boundary on panel",
+      "foreground": "#798B99",
+      "background": "#1B232B",
+      "minimum": 3,
+      "ratio": 4.5132,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "focus indicator on raised",
+      "foreground": "#78D8CB",
+      "background": "#232E38",
+      "minimum": 3,
+      "ratio": 8.2161,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "control boundary on raised",
+      "foreground": "#798B99",
+      "background": "#232E38",
+      "minimum": 3,
+      "ratio": 3.9266,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "focus indicator on selection",
+      "foreground": "#78D8CB",
+      "background": "#2C3D48",
+      "minimum": 3,
+      "ratio": 6.6821,
+      "pass": true
+    },
+    {
+      "variant": "night",
+      "label": "control boundary on selection",
+      "foreground": "#798B99",
+      "background": "#2C3D48",
+      "minimum": 3,
+      "ratio": 3.1935,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on bg",
+      "foreground": "#26333D",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 11.6736,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on bg",
+      "foreground": "#4D5F6C",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 5.9798,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on bg",
+      "foreground": "#6943A0",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.5095,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on bg",
+      "foreground": "#00675F",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.1024,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on bg",
+      "foreground": "#245995",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.4501,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on bg",
+      "foreground": "#496424",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.0512,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on bg",
+      "foreground": "#83501B",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.0575,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on bg",
+      "foreground": "#344E60",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 7.8805,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on bg",
+      "foreground": "#46576B",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.6819,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on bg",
+      "foreground": "#485C69",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.2949,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on bg",
+      "foreground": "#AB2946",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.0404,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on bg",
+      "foreground": "#795300",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.2125,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on bg",
+      "foreground": "#245995",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 6.4501,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on bg",
+      "foreground": "#276B47",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 5.7769,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on recessed",
+      "foreground": "#26333D",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 10.6773,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on recessed",
+      "foreground": "#4D5F6C",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.4695,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on recessed",
+      "foreground": "#6943A0",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.954,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on recessed",
+      "foreground": "#00675F",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.5816,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on recessed",
+      "foreground": "#245995",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.8996,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on recessed",
+      "foreground": "#496424",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.5348,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on recessed",
+      "foreground": "#83501B",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.5406,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on recessed",
+      "foreground": "#344E60",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 7.208,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on recessed",
+      "foreground": "#46576B",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 6.1117,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on recessed",
+      "foreground": "#485C69",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.7577,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on recessed",
+      "foreground": "#AB2946",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.5249,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on recessed",
+      "foreground": "#795300",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.6824,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on recessed",
+      "foreground": "#245995",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.8996,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on recessed",
+      "foreground": "#276B47",
+      "background": "#EDE9E0",
+      "minimum": 4.5,
+      "ratio": 5.2839,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on panel",
+      "foreground": "#26333D",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 10.9796,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on panel",
+      "foreground": "#4D5F6C",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.6244,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on panel",
+      "foreground": "#6943A0",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 6.1226,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on panel",
+      "foreground": "#00675F",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.7396,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on panel",
+      "foreground": "#245995",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 6.0667,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on panel",
+      "foreground": "#496424",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.6914,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on panel",
+      "foreground": "#83501B",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.6974,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on panel",
+      "foreground": "#344E60",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 7.412,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on panel",
+      "foreground": "#46576B",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 6.2847,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on panel",
+      "foreground": "#485C69",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.9207,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on panel",
+      "foreground": "#AB2946",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.6813,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on panel",
+      "foreground": "#795300",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.8432,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on panel",
+      "foreground": "#245995",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 6.0667,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on panel",
+      "foreground": "#276B47",
+      "background": "#F0ECE4",
+      "minimum": 4.5,
+      "ratio": 5.4335,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on raised",
+      "foreground": "#26333D",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 12.6251,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on raised",
+      "foreground": "#4D5F6C",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.4673,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on raised",
+      "foreground": "#6943A0",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 7.0401,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on raised",
+      "foreground": "#00675F",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.5998,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on raised",
+      "foreground": "#245995",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.9758,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on raised",
+      "foreground": "#496424",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.5444,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on raised",
+      "foreground": "#83501B",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.5513,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on raised",
+      "foreground": "#344E60",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 8.5228,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on raised",
+      "foreground": "#46576B",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 7.2266,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on raised",
+      "foreground": "#485C69",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.808,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on raised",
+      "foreground": "#AB2946",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.5328,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on raised",
+      "foreground": "#795300",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.7189,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on raised",
+      "foreground": "#245995",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.9758,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on raised",
+      "foreground": "#276B47",
+      "background": "#FFFCF5",
+      "minimum": 4.5,
+      "ratio": 6.2477,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on selection",
+      "foreground": "#26333D",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 9.8854,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on selection",
+      "foreground": "#4D5F6C",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.0638,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on selection",
+      "foreground": "#6943A0",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.5124,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on selection",
+      "foreground": "#00675F",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.1676,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on selection",
+      "foreground": "#245995",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.462,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on selection",
+      "foreground": "#496424",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.1242,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on selection",
+      "foreground": "#83501B",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.1296,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on selection",
+      "foreground": "#344E60",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 6.6733,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on selection",
+      "foreground": "#46576B",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.6584,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on selection",
+      "foreground": "#485C69",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.3306,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on selection",
+      "foreground": "#AB2946",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.1151,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on selection",
+      "foreground": "#795300",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.2609,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on selection",
+      "foreground": "#245995",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 5.462,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on selection",
+      "foreground": "#276B47",
+      "background": "#D9E3E3",
+      "minimum": 4.5,
+      "ratio": 4.8919,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on successLine",
+      "foreground": "#26333D",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 10.6769,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on successLine",
+      "foreground": "#4D5F6C",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.4693,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on successLine",
+      "foreground": "#6943A0",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.9537,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on successLine",
+      "foreground": "#00675F",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.5814,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on successLine",
+      "foreground": "#245995",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.8994,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on successLine",
+      "foreground": "#496424",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.5345,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on successLine",
+      "foreground": "#83501B",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.5403,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on successLine",
+      "foreground": "#344E60",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 7.2077,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on successLine",
+      "foreground": "#46576B",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 6.1114,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on successLine",
+      "foreground": "#485C69",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.7574,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on successLine",
+      "foreground": "#AB2946",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.5247,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on successLine",
+      "foreground": "#795300",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.6821,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on successLine",
+      "foreground": "#245995",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.8994,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on successLine",
+      "foreground": "#276B47",
+      "background": "#e9eae2",
+      "minimum": 4.5,
+      "ratio": 5.2836,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on successWord",
+      "foreground": "#26333D",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 9.4119,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on successWord",
+      "foreground": "#4D5F6C",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.8213,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on successWord",
+      "foreground": "#6943A0",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.2483,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on successWord",
+      "foreground": "#00675F",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.9201,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on successWord",
+      "foreground": "#245995",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.2004,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on successWord",
+      "foreground": "#496424",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.8788,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on successWord",
+      "foreground": "#83501B",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.8839,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on successWord",
+      "foreground": "#344E60",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 6.3537,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on successWord",
+      "foreground": "#46576B",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.3874,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on successWord",
+      "foreground": "#485C69",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.0753,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on successWord",
+      "foreground": "#AB2946",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.8701,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on successWord",
+      "foreground": "#795300",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.0089,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on successWord",
+      "foreground": "#245995",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 5.2004,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on successWord",
+      "foreground": "#276B47",
+      "background": "#d7ded3",
+      "minimum": 4.5,
+      "ratio": 4.6576,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on errorLine",
+      "foreground": "#26333D",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 10.5691,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on errorLine",
+      "foreground": "#4D5F6C",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.4141,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on errorLine",
+      "foreground": "#6943A0",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.8936,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on errorLine",
+      "foreground": "#00675F",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.525,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on errorLine",
+      "foreground": "#245995",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.8398,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on errorLine",
+      "foreground": "#496424",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.4786,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on errorLine",
+      "foreground": "#83501B",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.4844,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on errorLine",
+      "foreground": "#344E60",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 7.1349,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on errorLine",
+      "foreground": "#46576B",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 6.0497,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on errorLine",
+      "foreground": "#485C69",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.6993,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on errorLine",
+      "foreground": "#AB2946",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.4689,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on errorLine",
+      "foreground": "#795300",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.6247,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on errorLine",
+      "foreground": "#245995",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.8398,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on errorLine",
+      "foreground": "#276B47",
+      "background": "#f1e6e2",
+      "minimum": 4.5,
+      "ratio": 5.2303,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "fg on errorWord",
+      "foreground": "#26333D",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 9.1519,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "muted on errorWord",
+      "foreground": "#4D5F6C",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.6881,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "keyword on errorWord",
+      "foreground": "#6943A0",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 5.1034,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "type on errorWord",
+      "foreground": "#00675F",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.7842,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "function on errorWord",
+      "foreground": "#245995",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 5.0568,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "string on errorWord",
+      "foreground": "#496424",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.744,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "number on errorWord",
+      "foreground": "#83501B",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.749,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "property on errorWord",
+      "foreground": "#344E60",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 6.1782,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "parameter on errorWord",
+      "foreground": "#46576B",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 5.2385,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "operator on errorWord",
+      "foreground": "#485C69",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.9351,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "error on errorWord",
+      "foreground": "#AB2946",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.7356,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "warning on errorWord",
+      "foreground": "#795300",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.8705,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "info on errorWord",
+      "foreground": "#245995",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 5.0568,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "success on errorWord",
+      "foreground": "#276B47",
+      "background": "#ead4d3",
+      "minimum": 4.5,
+      "ratio": 4.529,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "line numbers on editor",
+      "foreground": "#526673",
+      "background": "#F6F3EC",
+      "minimum": 4.5,
+      "ratio": 5.4037,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "button label on accent",
+      "foreground": "#F6F3EC",
+      "background": "#00675F",
+      "minimum": 4.5,
+      "ratio": 6.1024,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "focus indicator on bg",
+      "foreground": "#00675F",
+      "background": "#F6F3EC",
+      "minimum": 3,
+      "ratio": 6.1024,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "control boundary on bg",
+      "foreground": "#667B87",
+      "background": "#F6F3EC",
+      "minimum": 3,
+      "ratio": 3.9912,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "focus indicator on panel",
+      "foreground": "#00675F",
+      "background": "#F0ECE4",
+      "minimum": 3,
+      "ratio": 5.7396,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "control boundary on panel",
+      "foreground": "#667B87",
+      "background": "#F0ECE4",
+      "minimum": 3,
+      "ratio": 3.7539,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "focus indicator on raised",
+      "foreground": "#00675F",
+      "background": "#FFFCF5",
+      "minimum": 3,
+      "ratio": 6.5998,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "control boundary on raised",
+      "foreground": "#667B87",
+      "background": "#FFFCF5",
+      "minimum": 3,
+      "ratio": 4.3165,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "focus indicator on selection",
+      "foreground": "#00675F",
+      "background": "#D9E3E3",
+      "minimum": 3,
+      "ratio": 5.1676,
+      "pass": true
+    },
+    {
+      "variant": "day",
+      "label": "control boundary on selection",
+      "foreground": "#667B87",
+      "background": "#D9E3E3",
+      "minimum": 3,
+      "ratio": 3.3798,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on bg",
+      "foreground": "#FFFFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 19.4936,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on bg",
+      "foreground": "#CAD6DF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 13.1772,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on bg",
+      "foreground": "#DDC5FF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 12.5361,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on bg",
+      "foreground": "#93F5E4",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.2438,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on bg",
+      "foreground": "#BCDFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.0515,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on bg",
+      "foreground": "#D4EDAF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.3462,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on bg",
+      "foreground": "#FFD5A6",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.2213,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on bg",
+      "foreground": "#F3F7FA",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 18.0971,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on bg",
+      "foreground": "#E0EBF5",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 16.1252,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on bg",
+      "foreground": "#D6E4EE",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.0297,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on bg",
+      "foreground": "#FFB7C2",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 11.8859,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on bg",
+      "foreground": "#FFE2A1",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.4511,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on bg",
+      "foreground": "#BCDFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.0515,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on bg",
+      "foreground": "#B2F2C7",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.2408,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on recessed",
+      "foreground": "#FFFFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 19.4936,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on recessed",
+      "foreground": "#CAD6DF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 13.1772,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on recessed",
+      "foreground": "#DDC5FF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 12.5361,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on recessed",
+      "foreground": "#93F5E4",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.2438,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on recessed",
+      "foreground": "#BCDFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.0515,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on recessed",
+      "foreground": "#D4EDAF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.3462,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on recessed",
+      "foreground": "#FFD5A6",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.2213,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on recessed",
+      "foreground": "#F3F7FA",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 18.0971,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on recessed",
+      "foreground": "#E0EBF5",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 16.1252,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on recessed",
+      "foreground": "#D6E4EE",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.0297,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on recessed",
+      "foreground": "#FFB7C2",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 11.8859,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on recessed",
+      "foreground": "#FFE2A1",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.4511,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on recessed",
+      "foreground": "#BCDFFF",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 14.0515,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on recessed",
+      "foreground": "#B2F2C7",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 15.2408,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on panel",
+      "foreground": "#FFFFFF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 17.5945,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on panel",
+      "foreground": "#CAD6DF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 11.8935,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on panel",
+      "foreground": "#DDC5FF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 11.3149,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on panel",
+      "foreground": "#93F5E4",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 13.7588,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on panel",
+      "foreground": "#BCDFFF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 12.6826,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on panel",
+      "foreground": "#D4EDAF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 13.8512,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on panel",
+      "foreground": "#FFD5A6",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 12.8359,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on panel",
+      "foreground": "#F3F7FA",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 16.3341,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on panel",
+      "foreground": "#E0EBF5",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 14.5543,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on panel",
+      "foreground": "#D6E4EE",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 13.5655,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on panel",
+      "foreground": "#FFB7C2",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 10.728,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on panel",
+      "foreground": "#FFE2A1",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 13.9459,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on panel",
+      "foreground": "#BCDFFF",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 12.6826,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on panel",
+      "foreground": "#B2F2C7",
+      "background": "#111A21",
+      "minimum": 7,
+      "ratio": 13.756,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on raised",
+      "foreground": "#FFFFFF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 15.8004,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on raised",
+      "foreground": "#CAD6DF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 10.6807,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on raised",
+      "foreground": "#DDC5FF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 10.1611,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on raised",
+      "foreground": "#93F5E4",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 12.3558,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on raised",
+      "foreground": "#BCDFFF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 11.3893,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on raised",
+      "foreground": "#D4EDAF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 12.4388,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on raised",
+      "foreground": "#FFD5A6",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 11.527,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on raised",
+      "foreground": "#F3F7FA",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 14.6685,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on raised",
+      "foreground": "#E0EBF5",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 13.0702,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on raised",
+      "foreground": "#D6E4EE",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 12.1823,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on raised",
+      "foreground": "#FFB7C2",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 9.634,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on raised",
+      "foreground": "#FFE2A1",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 12.5238,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on raised",
+      "foreground": "#BCDFFF",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 11.3893,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on raised",
+      "foreground": "#B2F2C7",
+      "background": "#18242D",
+      "minimum": 7,
+      "ratio": 12.3533,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on selection",
+      "foreground": "#FFFFFF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 11.5308,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on selection",
+      "foreground": "#CAD6DF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 7.7945,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on selection",
+      "foreground": "#DDC5FF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 7.4153,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on selection",
+      "foreground": "#93F5E4",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 9.017,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on selection",
+      "foreground": "#BCDFFF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 8.3117,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on selection",
+      "foreground": "#D4EDAF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 9.0775,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on selection",
+      "foreground": "#FFD5A6",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 8.4122,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on selection",
+      "foreground": "#F3F7FA",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 10.7048,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on selection",
+      "foreground": "#E0EBF5",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 9.5383,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on selection",
+      "foreground": "#D6E4EE",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 8.8903,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on selection",
+      "foreground": "#FFB7C2",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 7.0307,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on selection",
+      "foreground": "#FFE2A1",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 9.1396,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on selection",
+      "foreground": "#BCDFFF",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 8.3117,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on selection",
+      "foreground": "#B2F2C7",
+      "background": "#253C49",
+      "minimum": 7,
+      "ratio": 9.0152,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on successLine",
+      "foreground": "#FFFFFF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 17.4522,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on successLine",
+      "foreground": "#CAD6DF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 11.7973,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on successLine",
+      "foreground": "#DDC5FF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 11.2234,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on successLine",
+      "foreground": "#93F5E4",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 13.6475,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on successLine",
+      "foreground": "#BCDFFF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 12.58,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on successLine",
+      "foreground": "#D4EDAF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 13.7391,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on successLine",
+      "foreground": "#FFD5A6",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 12.7321,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on successLine",
+      "foreground": "#F3F7FA",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 16.202,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on successLine",
+      "foreground": "#E0EBF5",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 14.4366,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on successLine",
+      "foreground": "#D6E4EE",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 13.4558,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on successLine",
+      "foreground": "#FFB7C2",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 10.6412,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on successLine",
+      "foreground": "#FFE2A1",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 13.8331,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on successLine",
+      "foreground": "#BCDFFF",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 12.58,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on successLine",
+      "foreground": "#B2F2C7",
+      "background": "#141b1c",
+      "minimum": 7,
+      "ratio": 13.6448,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on successWord",
+      "foreground": "#FFFFFF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 13.8665,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on successWord",
+      "foreground": "#CAD6DF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 9.3734,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on successWord",
+      "foreground": "#DDC5FF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 8.9174,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on successWord",
+      "foreground": "#93F5E4",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.8435,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on successWord",
+      "foreground": "#BCDFFF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 9.9953,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on successWord",
+      "foreground": "#D4EDAF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.9163,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on successWord",
+      "foreground": "#FFD5A6",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.1162,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on successWord",
+      "foreground": "#F3F7FA",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 12.8732,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on successWord",
+      "foreground": "#E0EBF5",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 11.4704,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on successWord",
+      "foreground": "#D6E4EE",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.6912,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on successWord",
+      "foreground": "#FFB7C2",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 8.4549,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on successWord",
+      "foreground": "#FFE2A1",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.991,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on successWord",
+      "foreground": "#BCDFFF",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 9.9953,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on successWord",
+      "foreground": "#B2F2C7",
+      "background": "#232f2c",
+      "minimum": 7,
+      "ratio": 10.8413,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on errorLine",
+      "foreground": "#FFFFFF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 17.7027,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on errorLine",
+      "foreground": "#CAD6DF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 11.9666,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on errorLine",
+      "foreground": "#DDC5FF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 11.3845,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on errorLine",
+      "foreground": "#93F5E4",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 13.8434,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on errorLine",
+      "foreground": "#BCDFFF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 12.7606,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on errorLine",
+      "foreground": "#D4EDAF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 13.9363,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on errorLine",
+      "foreground": "#FFD5A6",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 12.9148,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on errorLine",
+      "foreground": "#F3F7FA",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 16.4346,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on errorLine",
+      "foreground": "#E0EBF5",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 14.6438,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on errorLine",
+      "foreground": "#D6E4EE",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 13.6489,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on errorLine",
+      "foreground": "#FFB7C2",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 10.7939,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on errorLine",
+      "foreground": "#FFE2A1",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 14.0317,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on errorLine",
+      "foreground": "#BCDFFF",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 12.7606,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on errorLine",
+      "foreground": "#B2F2C7",
+      "background": "#18181c",
+      "minimum": 7,
+      "ratio": 13.8406,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "fg on errorWord",
+      "foreground": "#FFFFFF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 14.5556,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "muted on errorWord",
+      "foreground": "#CAD6DF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 9.8392,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "keyword on errorWord",
+      "foreground": "#DDC5FF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 9.3606,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "type on errorWord",
+      "foreground": "#93F5E4",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 11.3824,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "function on errorWord",
+      "foreground": "#BCDFFF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 10.492,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "string on errorWord",
+      "foreground": "#D4EDAF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 11.4588,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "number on errorWord",
+      "foreground": "#FFD5A6",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 10.6189,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "property on errorWord",
+      "foreground": "#F3F7FA",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 13.5129,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "parameter on errorWord",
+      "foreground": "#E0EBF5",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 12.0404,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "operator on errorWord",
+      "foreground": "#D6E4EE",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 11.2225,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "error on errorWord",
+      "foreground": "#FFB7C2",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 8.875,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "warning on errorWord",
+      "foreground": "#FFE2A1",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 11.5372,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "info on errorWord",
+      "foreground": "#BCDFFF",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 10.492,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "success on errorWord",
+      "foreground": "#B2F2C7",
+      "background": "#2e272c",
+      "minimum": 7,
+      "ratio": 11.3801,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "line numbers on editor",
+      "foreground": "#B7C7D4",
+      "background": "#090D11",
+      "minimum": 7,
+      "ratio": 11.2631,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "button label on accent",
+      "foreground": "#090D11",
+      "background": "#93F5E4",
+      "minimum": 7,
+      "ratio": 15.2438,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "focus indicator on bg",
+      "foreground": "#93F5E4",
+      "background": "#090D11",
+      "minimum": 3,
+      "ratio": 15.2438,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "control boundary on bg",
+      "foreground": "#90A8B8",
+      "background": "#090D11",
+      "minimum": 3,
+      "ratio": 7.8708,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "focus indicator on panel",
+      "foreground": "#93F5E4",
+      "background": "#111A21",
+      "minimum": 3,
+      "ratio": 13.7588,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "control boundary on panel",
+      "foreground": "#90A8B8",
+      "background": "#111A21",
+      "minimum": 3,
+      "ratio": 7.104,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "focus indicator on raised",
+      "foreground": "#93F5E4",
+      "background": "#18242D",
+      "minimum": 3,
+      "ratio": 12.3558,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "control boundary on raised",
+      "foreground": "#90A8B8",
+      "background": "#18242D",
+      "minimum": 3,
+      "ratio": 6.3796,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "focus indicator on selection",
+      "foreground": "#93F5E4",
+      "background": "#253C49",
+      "minimum": 3,
+      "ratio": 9.017,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "control boundary on selection",
+      "foreground": "#90A8B8",
+      "background": "#253C49",
+      "minimum": 3,
+      "ratio": 4.6557,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "high contrast separator on bg",
+      "foreground": "#90A8B8",
+      "background": "#090D11",
+      "minimum": 3,
+      "ratio": 7.8708,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "high contrast separator on panel",
+      "foreground": "#90A8B8",
+      "background": "#111A21",
+      "minimum": 3,
+      "ratio": 7.104,
+      "pass": true
+    },
+    {
+      "variant": "contrast",
+      "label": "high contrast separator on raised",
+      "foreground": "#90A8B8",
+      "background": "#18242D",
+      "minimum": 3,
+      "ratio": 6.3796,
+      "pass": true
+    }
+  ]
+}

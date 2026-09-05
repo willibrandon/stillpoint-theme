@@ -1,0 +1,14 @@
+[Unit]
+Description=Assembly inspection worker
+After=network-online.target
+
+[Service]
+Type=simple
+User=inspect
+Environment="DOTNET_ENVIRONMENT=Production"
+ExecStart=/usr/local/bin/inspect --workspace %h/projects
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
