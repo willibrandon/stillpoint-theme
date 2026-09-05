@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/build.mjs --check && node verify-palette.mjs && node scripts/verify.mjs",
+    "check": "node scripts/check.mjs",
     "package": "npm run check && vsce package --no-dependencies --allow-missing-repository --out dist/stillpoint-theme-0.1.0.vsix"
   },
   "contributes": {

@@ -1,0 +1,5 @@
+{
+  "version": "1.136.1",
+  "policy": "Every unmapped registration with a literal hex default requires an explicit key and reason. Empty until the mapping pass reviews each exception.",
+  "accepted": {}
+}
